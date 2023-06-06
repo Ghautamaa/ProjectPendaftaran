@@ -99,7 +99,7 @@
       data-wow-delay="0.1s"
     >
       <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
+        <img class="img-fluid me-3" src="resource/img/icon/icon-10.png" alt="Icon" />
         <h1 class="m-0 text-primary">Zoofari</h1>
       </a>
       <button
