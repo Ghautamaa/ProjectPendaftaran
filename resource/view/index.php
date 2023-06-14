@@ -8,18 +8,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Zoofari</title>
   </head>
   <body>
  
     <!-- Nav -->
-    <nav class="navbar navbar-light fixed-top" style="background-color: rgba(0, 0, 0, 0.95);">
-  <a class="navbar-brand" href="#">
-    <img src="https://stickershop.line-scdn.net/stickershop/v1/product/9738038/LINEStorePC/main.png" width="30" height="30" class="d-inline-block align-top" alt="">
-     Bootstrap
-  </a>
-  <a class="navbar-brand">Navbar</a>
-  <form class="form-inline">
+    <nav class="navbar navbar-light fixed-top" style="background-color: rgba(1, 1, 1, 0.95);">
+      <a class="navbar-brand" href="#" style="color : White;">
+        <img src="https://stickershop.line-scdn.net/stickershop/v1/product/9738038/LINEStorePC/main.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        PNB EC
+      </a>
+        <ul class="nav ml-auto">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#" style="color : White;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="#" style="color : White;">Pendaftaran</a>
+          </li>
+          <li class="nav-item">
+            <!-- Dropdown Button -->
+            <div class="btn-group">
+              <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Valorant</a>
+                <a class="dropdown-item" href="#">PUBG Mobile</a>
+                <a class="dropdown-item" href="#">Mobile Legends</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Guide Book</a>
+              </div>
+            </div>
+          </li>
+            
+          <li class="nav-item">
+            <a class="navbar-brand" href="#" style="color : White;">About</a>
+          </li>
+
+        </ul>
+        
+      <form class="form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
   </form>
@@ -30,9 +56,38 @@
 <br>
 <br>
 <br>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://m.media-amazon.com/images/M/MV5BODhkN2U1YzYtODQzZC00MTc5LTlmMmYtYjQ2ZGU2ZmM4YzJkXkEyXkFqcGdeQXVyMTE0MTc4MjU2._V1_FMjpg_UX1000_.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/11/09/bannerjpg-20211109035157.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://esports.id/img/article/446720191210042846.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+<br>
+<br>
+<br>
 
 <div class="welcome" style=" padding-top: 10px; padding-left: 59px; padding-right: 50px; padding-bottom: 20px;">
-<h7>#Welcome To Zoofari</h7><br>
+<h7>#Welcome To PNB EC</h7><br>
 <h1 style="display: inline;">Beberapa </h1><h1 style="color: gold; display: inline;">Keuntungan </h1> <h1 style="display: inline;">yang bisa kamu dapatkan : </h1>
 <br>
 <br>
