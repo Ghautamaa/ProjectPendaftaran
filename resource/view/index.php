@@ -26,6 +26,7 @@
             <a class="navbar-brand" href="#" style="color : White;">Pendaftaran</a>
           </li>
           <li class="nav-item">
+
             <!-- Dropdown Button -->
             <div class="btn-group">
               <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
@@ -38,7 +39,8 @@
               </div>
             </div>
           </li>
-            
+          <!-- End DropDown -->
+          
           <li class="nav-item">
             <a class="navbar-brand" href="#" style="color : White;">About</a>
           </li>
