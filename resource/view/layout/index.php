@@ -61,10 +61,10 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/resource/img/valorant.jpg" class="d-block w-100" alt="...">
+      <img src="../../img/valorant.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/resource/img/ml.png" class="d-block w-100" alt="...">
+      <img src="../../img/ml.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="https://esports.id/img/article/446720191210042846.jpg" class="d-block w-100" alt="...">
