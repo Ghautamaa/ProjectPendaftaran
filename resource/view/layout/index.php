@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c5fb8dca67f52a67a9ec29396bcadb470be33381
 <!doctype html>
 <html lang="en">
   <head>
@@ -60,6 +63,8 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
+
+<!-- Slide Gambar -->
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/resource/img/valorant.jpg" class="d-block w-100" alt="...">
@@ -80,6 +85,8 @@
     <span class="sr-only">Next</span>
   </button>
 </div>
+<!-- End Slide Gambar -->
+
 <br>
 <br>
 <br>
@@ -133,7 +140,6 @@
       <div class="card-body">
       <center>
         <h5 class="card-title">Perlombaan E-Sport</h5>
-        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
         </center>
       </div>
     </div>
@@ -145,7 +151,6 @@
       <div class="card-body">
         <center>
         <h5 class="card-title">E-Sport</h5>
-        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
         </center>  
     </div>
     </div>
@@ -160,7 +165,7 @@
       </div>
     </div>
   </div>
-
+<!-- End Card -->
 </div>
 <!-- End Body -->
 
@@ -178,6 +183,7 @@
     -->
 
   </body>
+<<<<<<< HEAD
 =======
 <!DOCTYPE html>
 <html lang="en">
@@ -197,3 +203,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+</html>
+>>>>>>> c5fb8dca67f52a67a9ec29396bcadb470be33381
