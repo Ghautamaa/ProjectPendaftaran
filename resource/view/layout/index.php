@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> c5fb8dca67f52a67a9ec29396bcadb470be33381
 <!doctype html>
 <html lang="en">
   <head>
@@ -24,14 +20,28 @@
       </a>
         <ul class="nav ml-auto">
           <li class="nav-item">
-            <a class="navbar-brand" href="#" style="color : White;">Home</a>
+            <a class="navbar-brand text-white" href="#">Home</a>
           </li>
+
           <li class="nav-item">
-            <a class="navbar-brand" href="#" style="color : White;">Pendaftaran</a>
+            <a class="navbar-brand text-white" href="#">Pendaftaran</a>
           </li>
+
           <li class="nav-item">
-            <!-- Dropdown Button -->
-            <div class="btn-group">
+            <a class="navbar-brand text-white" href="#">About</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="navbar-brand text-white" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="navbar-brand text-white" href="#"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
+          </li>
+          
+          <!-- Dropdown Item -->
+          <!-- <li class="nav-item">  
+          <div class="btn-group">
               <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Valorant</a>
@@ -41,19 +51,12 @@
                 <a class="dropdown-item" href="#">Guide Book</a>
               </div>
             </div>
-          </li>
-            
-          <li class="nav-item">
-            <a class="navbar-brand" href="#" style="color : White;">About</a>
-          </li>
-
+          </li> -->
+          <!-- End Dropdown Item -->
+          
         </ul>
         
-      <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
+      </nav>
     <!-- End Nav -->
 
 <!-- Body -->
@@ -67,10 +70,10 @@
 <!-- Slide Gambar -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/resource/img/valorant.jpg" class="d-block w-100" alt="...">
+      <img src="../../img/valorant.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/resource/img/ml.png" class="d-block w-100" alt="...">
+      <img src="../../img/ml.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="https://esports.id/img/article/446720191210042846.jpg" class="d-block w-100" alt="...">
@@ -91,20 +94,34 @@
 <br>
 <br>
 
-<div class="welcome" style=" padding-top: 10px; padding-left: 59px; padding-right: 50px; padding-bottom: 20px;">
-<h7>#Welcome To PNB EC</h7><br>
-<h1 style="display: inline;">Beberapa </h1><h1 style="color: gold; display: inline;">Keuntungan </h1> <h1 style="display: inline;">yang bisa kamu dapatkan : </h1>
-<br>
-<br>
-<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
-<h4>
-    <li>Ayam Goreng</li>
-    <li>Sate Babi</li>
-</h4>
+<!-- Start Kolom/Grid Welcome -->
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5 ">
+      <h7>#Welcome To PNB EC</h7>
+      <h1>Apa Itu PNB EC ?</h1>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
+      <h4>
+        <li>Ayam Goreng</li>
+        <li>Sate Babi</li>
+        <li>Rumah</li>
+      </h4>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="../../img/ml.png" alt="" srcset="" width="100%">
+    </div>
+  </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3" style=" padding-top: 10px; padding-left: 50px; padding-right: 50px; padding-bottom: 20px;">
-        <!-- row-cols-md-4 buat ngatur besar kecilnya semua card -->
+<!-- End Kolom/Grid welcome -->
+
+<br>
+<br>
+
+  <!-- Start Card Daftar Lomba-->
+  <div class="row row-cols-1 row-cols-md-3" style=" padding-top: 10px; padding-left: 50px; padding-right: 50px; padding-bottom: 20px;">
+  <!-- row-cols-md-4 buat ngatur besar kecilnya semua card -->
 
   <div class="col mb-4">
     <div class="card">
@@ -165,7 +182,8 @@
       </div>
     </div>
   </div>
-<!-- End Card -->
+  <!-- End Card Daftar Lomba -->
+
 </div>
 <!-- End Body -->
 
@@ -183,26 +201,3 @@
     -->
 
   </body>
-<<<<<<< HEAD
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="js/bootstrap.min.js"></script>
-  <title>Home</title>
-</head>
-<body>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-</html>
-=======
-</html>
->>>>>>> c5fb8dca67f52a67a9ec29396bcadb470be33381
