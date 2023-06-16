@@ -59,12 +59,14 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
+
+<!-- Slide Gambar -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/resource/img/valorant.jpg" class="d-block w-100" alt="...">
+      <img src="../resource/img/valorant.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/resource/img/ml.png" class="d-block w-100" alt="...">
+      <img src="../resource/img/ml.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="https://esports.id/img/article/446720191210042846.jpg" class="d-block w-100" alt="...">
@@ -79,6 +81,8 @@
     <span class="sr-only">Next</span>
   </button>
 </div>
+<!-- End Slide Gambar -->
+
 <br>
 <br>
 <br>
@@ -132,7 +136,6 @@
       <div class="card-body">
       <center>
         <h5 class="card-title">Perlombaan E-Sport</h5>
-        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p> -->
         </center>
       </div>
     </div>
@@ -144,7 +147,6 @@
       <div class="card-body">
         <center>
         <h5 class="card-title">E-Sport</h5>
-        <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
         </center>  
     </div>
     </div>
@@ -159,7 +161,7 @@
       </div>
     </div>
   </div>
-
+<!-- End Card -->
 </div>
 <!-- End Body -->
 
