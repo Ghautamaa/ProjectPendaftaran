@@ -1,6 +1,4 @@
-<?php
-  include '../../backend/config/connection.php';
-?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,21 +17,27 @@
   <section id="form">
     <div class="container justify-content-center align-content-center">
             <div class=" p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506c ;">LOGIN</h2>
+                <h2 style="color: #3A506c ;">REGISTER</h2>
             </div>
             <div class="w-75 p-3 rounded-4 text-white px-5" style="background-color: #212a40;">
-                <form action="" method="post" class="">
+                <form action="proses-tambah.php" method="post" class="justify-content-center">
                     <div class="mb-1 pt-3">
-                        <label for="namaTim" class="form-label ms-3 fw-bold">Email</label>
-                        <input type="text" class="form-control rounded-pill" id="namaTim" placeholder="domain@aasd.asd">
+                        <label for="email" class="form-label ms-3 ">Email</label>
+                        <input type="text" class="form-control rounded-pill" id="email" placeholder="domain@aasd.asd">
                     </div>
                     <div class="mt-4">
-                        <label for=" " class="form-label ms-3 fw-bold">Password</label>
-                        <input type="text" class="form-control rounded-pill align-content-center" id="namaKetua" placeholder="*******">
-                    <div class="d-flex justify-content-between ms-3 my-4">
-                        <a style="text-decoration: none; color: #ffff;" class="color" href="daftar.php">Belum Punya Akun?</a>
-                        <button type="submit" class="btn btn-lg btn-success rounded-4 shadow fw-bold">Daftar</button> 
+                        <label for="nama" class="form-label ms-3 ">Nama Lengkap</label>
+                        <input type="text" class="form-control rounded-pill align-content-center" id="nama" placeholder="Your Name">
                     </div>
+                    <div class="mb-1 pt-3">
+                          <label for="password" class="form-label ms-3">Password</label>
+                          <input type="password" class="form-control rounded-pill" id="password" placeholder="**********">
+                    </div>
+                    <div class="d-flex justify-content-between ms-3 my-5">
+                        <a style="text-decoration: none; color: #ffff;" class="color mt-2" href="daftar.php">Kembali Ke login</a>
+                        <button type="submit" class="btn btn-lg btn-secondary  rounded-4" class="background-color: #44908F;">Daftar</button> 
+                    </div>
+                    
                 </form>
             </div>
     </div>
