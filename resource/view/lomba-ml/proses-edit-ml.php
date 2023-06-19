@@ -1,33 +1,33 @@
 <?php
-include '../../../backend/config/connection.php';
+include '../../../backend/connection.php';
 
 // blum ad database, blum di test
 
 if (isset($_POST['submit'])) {
     $id = $_POST['id'];
-    $namaTim = htmlspecialchars($_POST['namaTim']);
-    $namaKetua = htmlspecialchars($_POST['namaKetua']);
-    $namaAnggota1 = htmlspecialchars($_POST['namaAnggota1']);
-    $namaAnggota2 = htmlspecialchars($_POST['namaAnggota2']);
-    $namaAnggota3 = htmlspecialchars($_POST['namaAnggota3']);
-    $namaAnggota4 = htmlspecialchars($_POST['namaAnggota4']);
-    $noHP = htmlspecialchars($_POST['noHP']);
+    $tim = htmlspecialchars($_POST['tim']);
+    $ketua = htmlspecialchars($_POST['ketua']);
+    $anggota1 = htmlspecialchars($_POST['anggota1']);
+    $anggota2 = htmlspecialchars($_POST['anggota2']);
+    $anggota3 = htmlspecialchars($_POST['anggota3']);
+    $anggota4 = htmlspecialchars($_POST['anggota4']);
+    $telp = htmlspecialchars($_POST['telp']);
 
     $sql = "UPDATE tb_peserta_ml 
-            SET namaTim ='$namaTim',
-                namaAnggota1 = '$namaAnggota1',
-                namaAnggota2 = '$namaAnggota2',
-                namaAnggota3 = '$namaAnggota3',
-                namaAnggota4 = '$namaAnggota4',
-                noHP = '$noHP'
-            WHERE id = $id
-                ";
+            SET tim ='$tim',
+                ketua = '$ketua',
+                anggota1 = '$anggota1',
+                anggota2 = '$anggota2',
+                anggota3 = '$anggota3',
+                anggota4 = '$anggota4',
+                telp = '$telp'
+            WHERE id = $id";
     
     $query = mysqli_query($db, $sql);
     if ($query) {
-        header("Location: index.php?status=sukses");
+        header("Location: tabel-lomba-ml.php?status=sukses");
     } else {
-        header("Location: index.php?status=gagal");
+        header("Location: tabel-lomba-ml.php?status=gagal");
     }
 } else {
     die ("Akses tidak diijinkan");

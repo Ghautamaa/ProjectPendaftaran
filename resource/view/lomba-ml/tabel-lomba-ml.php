@@ -30,6 +30,31 @@
 
   <body>
 
+  <!-- PHP untuk menampilkan status -->
+  <?php
+    if (isset ($_GET['status'])) {
+        $status = $_GET['status'];
+
+        echo "<div class='container'>
+                <div class='row justify-content-center'>
+                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "sukses") {
+            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        } else {
+            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        }
+        echo "      </div>";
+        echo "  </div>";
+        echo "</div>";
+    }
+    ?>
+        
     <!-- Tabel lomba ml  -->
     <section id="tabel">
         <div class="container-fluid">
@@ -54,7 +79,6 @@
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <!-- placeholder -->
                         <tbody>
                             <?php
                             
@@ -80,9 +104,7 @@
                                 echo "</tr>";
                                 $no++;
                             }
-
                             ?>
-                            
                         </tbody>
                     </table>
                     <div class="d-flex justify-content-end">

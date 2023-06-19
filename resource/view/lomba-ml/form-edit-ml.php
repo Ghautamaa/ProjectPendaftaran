@@ -8,7 +8,7 @@
 <!--  blum ad database, blum di test -->
 
 <?php
-include '../../../backend/config/connection.php';
+include '../../../backend/connection.php';
 
 if (!isset($_GET['id']) || $_GET['id'] == null) {
     header("Location: tabel-lomba-ml.php");
@@ -16,7 +16,7 @@ if (!isset($_GET['id']) || $_GET['id'] == null) {
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM tb_peserta_ml WHERE id = $id";
+$sql = "SELECT * FROM tb_peserta WHERE id = $id";
 $query = mysqli_query($db, $sql);
 $peserta = mysqli_fetch_array($query);
 ?>
@@ -31,6 +31,31 @@ $peserta = mysqli_fetch_array($query);
   </head>
 
   <body style="background-color: #E6F6F5;">
+
+      <!-- PHP untuk menampilkan status pendaftaran -->
+      <?php
+    if (isset ($_GET['status'])) {
+        $status = $_GET['status'];
+
+        echo "<div class='container'>
+                <div class='row justify-content-center'>
+                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "sukses") {
+            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        } else {
+            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        }
+        echo "      </div>";
+        echo "  </div>";
+        echo "</div>";
+    }
+    ?>
     
   <!-- Form  -->
   <section id="form">
@@ -43,37 +68,37 @@ $peserta = mysqli_fetch_array($query);
         <div class="row justify-content-center">
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
                 <form action="proses-edit-ml.php" method="post">
-                    <input type="hidden" name="<?php echo $id; ?>">
+                    <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mb-1 pt-3">
-                        <label for="namaTim" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input type="text" value="<?php echo $peserta['namaTim'] ?>" class="form-control rounded-pill" id="namaTim" placeholder="Nama Tim">
+                        <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <input name="tim" type="text" value="<?php echo $peserta['tim'] ?>" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
                     </div>
                     <div class="mb-1">
-                        <label for="namaKetua" class="form-label ms-3 fw-bold">Nama Ketua</label>
-                        <input type="text" value="<?php echo $peserta['namaKetua'] ?>" class="form-control rounded-pill" id="namaKetua" placeholder="Nama Ketua">
+                        <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>
+                        <input name="ketua" type="text" value="<?php echo $peserta['ketua'] ?>" class="form-control rounded-pill" id="ketua" placeholder="Nama Ketua">
                     </div>
                     <div class="mb-1">
-                        <label for="namaAnggota1" class="form-label ms-3 fw-bold">Nama Anggota 1</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota1'] ?>" class="form-control rounded-pill" id="namaAnggota1" placeholder="Nama Anggota 1">
+                        <label for="anggota1" class="form-label ms-3 fw-bold">Nama Anggota 1</label>
+                        <input name="anggota1" type="text" value="<?php echo $peserta['anggota1'] ?>" class="form-control rounded-pill" id="anggota1" placeholder="Nama Anggota 1">
                     </div>
                     <div class="mb-1">
-                        <label for="namaAnggota2" class="form-label ms-3 fw-bold">Nama Anggota 2</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota2'] ?>" class="form-control rounded-pill" id="namaAnggota2" placeholder="Nama Anggota 2">
+                        <label for="anggota2" class="form-label ms-3 fw-bold">Nama Anggota 2</label>
+                        <input name="anggota2" type="text" value="<?php echo $peserta['anggota2'] ?>" class="form-control rounded-pill" id="anggota2" placeholder="Nama Anggota 2">
                     </div>
                     <div class="mb-1">
-                        <label for="namaAnggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota3'] ?>" class="form-control rounded-pill" id="namaAnggota3" placeholder="Nama Anggota 3">
+                        <label for="anggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
+                        <input name="anggota3" type="text" value="<?php echo $peserta['anggota3'] ?>" class="form-control rounded-pill" id="anggota3" placeholder="Nama Anggota 3">
                     </div>
                     <div class="mb-1">
-                        <label for="namaAnggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota4'] ?>" class="form-control rounded-pill" id="namaAnggota4" placeholder="Nama Anggota 4">
+                        <label for="anggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
+                        <input name="anggota4" type="text" value="<?php echo $peserta['anggota4'] ?>" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
                     </div>   
                     <div class="mb-1">
-                        <label for="noHP" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
-                        <input type="text" value="<?php echo $peserta['noHP'] ?>" class="form-control rounded-pill" id="noHP" placeholder="No. Telepon/WA">
+                        <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
+                        <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
+                        <button name="submit" type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>
             </div>
