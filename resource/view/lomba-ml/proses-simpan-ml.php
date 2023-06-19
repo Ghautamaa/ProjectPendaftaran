@@ -1,8 +1,6 @@
 <?php
 include '../../../backend/connection.php';
 
-// udh ditest, mau jalan, di punyaku sih...
-
 if (isset($_POST['submit'])) {
     $tim = htmlspecialchars($_POST['tim']);
     $ketua = htmlspecialchars($_POST['ketua']);

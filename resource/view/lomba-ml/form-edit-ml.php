@@ -1,11 +1,9 @@
-<!-- Baru front end aja ni -->
 <!-- Font style sama icon blum di add -->
 <!-- Nav sama footer juga -->
 
 <!-- rapiin klo niat  -->
 <!-- malas css -->
 
-<!--  blum ad database, blum di test -->
 
 <?php
 include '../../../backend/connection.php';
@@ -26,7 +24,7 @@ $peserta = mysqli_fetch_array($query);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit Pendaftaran Lomba Mobile Legends</title>
+    <title>Edit Pendaftaran Lomba MLBB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
 
@@ -57,14 +55,17 @@ $peserta = mysqli_fetch_array($query);
     }
     ?>
     
-  <!-- Form  -->
+  <!-- Form edit  -->
   <section id="form">
     <div class="container">
+        <!-- header form-->
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA MOBILE LEGENDS</h2>
+                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA MLBB</h2>
             </div>
         </div>
+        <!-- header form end-->
+        <!-- form -->
         <div class="row justify-content-center">
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
                 <form action="proses-edit-ml.php" method="post">
@@ -104,9 +105,10 @@ $peserta = mysqli_fetch_array($query);
                 </form>
             </div>
         </div>
+        <!-- form end -->
     </div>
   </section>
-  <!-- Form end -->
+  <!-- Form edit end -->
 
 
 

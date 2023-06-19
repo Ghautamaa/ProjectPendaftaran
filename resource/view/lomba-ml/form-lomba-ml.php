@@ -1,4 +1,3 @@
-<!-- Baru front end aja ni -->
 <!-- Font style sama icon blum di add -->
 <!-- Nav sama footer juga -->
 
@@ -12,7 +11,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pendaftaran Lomba Mobile Legends</title>
+    <title>Pendaftaran Lomba MLBB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
 
@@ -44,18 +43,21 @@
     }
     ?>
 
-  <!-- Form  -->
+  <!-- Form daftar  -->
   <section id="form">
     <div class="container">
+        <!-- header form -->
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
                 <h2 style="color: #3A506B;">PENDAFTARAN LOMBA MOBILE LEGENDS</h2>
             </div>
         </div>
+        <!-- header form end -->
+        <!-- form -->
         <div class="row justify-content-center">
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
                 <form action="proses-simpan-ml.php" method="post">
-                    <!-- input id kategori & id user, edit klo gk perlu -->
+                    <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="3">
                     <input type="hidden" name="user_id" value="1">
                     <!--  -->
@@ -87,19 +89,21 @@
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input required type="text" name="telp" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
+                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" name="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Daftar</button> 
                     </div>
                 </form>
             </div>
         </div>
+        <!-- form end -->
     </div>
   </section>
-  <!-- Form end -->
+  <!-- Form daftar end -->
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
-</html>
+  </html>
