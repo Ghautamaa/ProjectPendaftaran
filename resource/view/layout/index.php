@@ -13,7 +13,7 @@
   <body>
  
     <!-- Nav -->
-    <nav class="navbar navbar-light fixed-top" style="background-color: rgba(1, 1, 1, 0.95);">
+    <nav class="navbar p-3 mb-2 bg-dark text-white fixed-top">
       <a class="navbar-brand" href="#" style="color : White;">
         <img src="https://stickershop.line-scdn.net/stickershop/v1/product/9738038/LINEStorePC/main.png" width="30" height="30" class="d-inline-block align-top" alt="">
         PNB EC
@@ -38,24 +38,7 @@
           <li class="nav-item">
             <a class="navbar-brand text-white" href="#"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
           </li>
-          
-          <!-- Dropdown Item Admin -->
-          <!-- <li class="nav-item">  
-          <div class="btn-group">
-              <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Valorant</a>
-                <a class="dropdown-item" href="#">PUBG Mobile</a>
-                <a class="dropdown-item" href="#">Mobile Legends</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Guide Book</a>
-              </div>
-            </div>
-          </li> -->
-          <!-- End Dropdown Item -->
-          
         </ul>
-        
       </nav>
     <!-- End Nav -->
 
@@ -115,29 +98,33 @@
 </div>
 
 <!-- End Kolom/Grid welcome -->
-
 <br>
 <br>
 
   <!-- Start Card Daftar Lomba-->
   <!-- Card Valorant -->
-  <div class="container">
-    <div class="row">
-      <div class="col mb-5">
-            <div class="card" style="width: 18rem;">
-              <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-      </div>
-        <div class="col mb-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+  <div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-3">
+      <div class="card" style="width: 400px;">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white">
+          <h5 class="card-title">Valorant</h5>
+          <p class="card-text">Game FPS 5 ORANG</p>
+          <a href="#" class="btn btn-success text-white">Daftar</a>
         </div>
+        <!-- End Teks -->
+        
       </div>
+    </div>
+    <div class="col-md-7">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+    </div>
   </div>
+</div>
+
   <!-- End Card C -->
 
   <!-- Card Mobile Legends -->
