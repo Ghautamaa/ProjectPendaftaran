@@ -11,9 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pendaftaran Lomba Mobile Legends</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   </head>
 
-  <body style="background-color: #E6F6F5;">
+  <body style="background-color: #E6F6F5;;font-family: 'Montserrat', sans-serif;">
     
   <!-- Form  -->
   <section id="form">
@@ -24,7 +27,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #212a40;">
                 <form action="" method="post">
                     <div class="mb-1 pt-3">
                         <label for="namaTim" class="form-label ms-3 fw-bold">Nama Tim</label>
