@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Dashboard</title>
+    <title>Home PNB EC</title>
   </head>
   <body>
  
@@ -101,75 +101,116 @@
 <br>
 <br>
 
-  <!-- Start Card Daftar Lomba-->
-  <!-- Card Valorant -->
-  <div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-md-3">
-      <div class="card" style="width: 400px;">
-        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
 
+
+  <!-- Start Card Daftar Lomba-->
+  <div class="col-md-12 text-center py-3">
+      <h5 >#E-SPORT</h5>
+      <h1>
+          <span style="color: black;">E-SPORT</span>
+          <span style="color: #5BC0BE;">PNB EC</span>
+      </h1>
+
+  </div>
+  
+  <!-- Card Valorant -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
         <!-- Teks -->
-        <div class="card-body p-3 mb-2 bg-dark text-white">
-          <h5 class="card-title">Valorant</h5>
-          <p class="card-text">Game FPS 5 ORANG</p>
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">Valorant</h5>
+          <h6 class="card-text">Game FPS 5 ORANG</h6>
           <a href="#" class="btn btn-success text-white">Daftar</a>
         </div>
         <!-- End Teks -->
-        
+      
       </div>
     </div>
-    <div class="col-md-7">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+  <!-- Syarat -->
+    <div class="col-md-5">
+      <h3>Syarat Valorant</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+      </p>
     </div>
   </div>
 </div>
+  <!-- End Syarat -->
+  <!-- End Card Valorant -->
 
-  <!-- End Card C -->
+  <br>
+  <br>
 
   <!-- Card Mobile Legends -->
-    <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="col mb-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+  <div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- Syarat -->
+      <div class="col-md-5">
+        <h3>Syarat Valorant</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </p>
+      </div>
+      <!-- End Syarat -->
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">Valorant</h5>
+          <h6 class="card-text">Game FPS 5 ORANG</h6>
+          <a href="#" class="btn btn-success text-white">Daftar</a>
         </div>
-      </div>
-      <div class="col">
-      <div class="col mb-5">
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        <!-- End Teks -->
+      
       </div>
     </div>
-    </div>
+  </div>
   </div>
   <!-- End Card Mobile Legends -->
 
-  <!-- Card Pubg -->
-  <div class="container">
-    <div class="row">
-      <div class="col mb-5">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-      </div>
-        <div class="col mb-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+  <br>
+  <br>
+
+  <!-- Card PUBG-M -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">PUBG-MOBILE</h5>
+          <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
+          <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
         </div>
+        <!-- End Teks -->
+      
+      </div>
+    </div>
+  <!-- Syarat -->
+    <div class="col-md-5">
+      <h3>Syarat PUBG-MOBILE</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+      </p>
     </div>
   </div>
-  <!-- End Card Pubg -->
+</div>
+  <!-- End Syarat -->
+
+  <!-- End Card PUBG-M -->
 
 </div>
 <!-- End Card Daftar Lomba -->
