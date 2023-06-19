@@ -60,7 +60,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center py-3">
-                    <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA MOBILE LEGENDS</h2>
+                    <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -74,7 +74,6 @@
                                 <th>Nama Anggota 2</th>
                                 <th>Nama Anggota 3</th>
                                 <th>Nama Anggota 4</th>
-                                <th>Kategori</th>
                                 <th>No HP</th>
                                 <th>Aksi</th>
                             </tr>
@@ -82,10 +81,9 @@
                         <tbody>
                             <?php
                             
-                            $sql = "SELECT tb_peserta.* ,tb_kategorilomba.*
+                            $sql = "SELECT *
                                     FROM tb_peserta 
-                                    INNER JOIN tb_kategorilomba 
-                                    ON tb_peserta.kategori_id = tb_kategorilomba.id";
+                                    WHERE kategori_id = 3";
                             $query = mysqli_query($db, $sql);
                             $no = 1;
                             while ($peserta = mysqli_fetch_assoc($query)) {
@@ -97,7 +95,6 @@
                                 echo "<td>".$peserta['anggota2']."</td>";
                                 echo "<td>".$peserta['anggota3']."</td>";
                                 echo "<td>".$peserta['anggota4']."</td>";
-                                echo "<td>".$peserta['kategori']."</td>";
                                 echo "<td>".$peserta['telp']."</td>";
                                 echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
                                 echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold'>Hapus</button></a></td>";
