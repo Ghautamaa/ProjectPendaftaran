@@ -15,13 +15,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar Peserta Lomba MLBB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <style>
         .table thead tr th {
             background-color: #0B132B;
             color: white;
         }
         body {
-            background-color: #E6F6F5;
+            background-image: url('../../img/ml_bg.jpg');
+            /* background-size: auto; */
+            /* background-position: center; */
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2 {
+            color: white;
         }
     </style>
   </head>
@@ -55,11 +66,11 @@
         
     <!-- Tabel lomba ml  -->
     <section id="tabel">
-        <div class="container-fluid">
+        <div class="container">
             <!-- header tabel -->
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center py-3">
-                    <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA MLBB</h2>
+                    <h2>DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             </div>
             <!-- header tabel end -->
@@ -107,9 +118,7 @@
                         </tbody>
                     </table>
                     <div class="d-flex justify-content-end">
-                            <a href="form-lomba-ml.php">
-                                <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
-                            </a>
+                        <a href="form-lomba-ml.php" class="btn btn-primary fw-bold mb-3">Tambah data</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +126,6 @@
         </div>
     </section>
     <!-- Tabel lomba ml end -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
