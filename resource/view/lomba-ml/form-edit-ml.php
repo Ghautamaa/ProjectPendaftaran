@@ -98,7 +98,7 @@ $peserta = mysqli_fetch_array($query);
                         <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-between">
-                        <a href="tabel-lomba-ml.php"><button class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
+                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button name="submit" type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>
