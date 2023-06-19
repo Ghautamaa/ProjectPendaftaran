@@ -39,7 +39,7 @@
             <a class="navbar-brand text-white" href="#"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
           </li>
           
-          <!-- Dropdown Item -->
+          <!-- Dropdown Item Admin -->
           <!-- <li class="nav-item">  
           <div class="btn-group">
               <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
@@ -120,69 +120,72 @@
 <br>
 
   <!-- Start Card Daftar Lomba-->
-  <div class="row row-cols-1 row-cols-md-3" style=" padding-top: 10px; padding-left: 50px; padding-right: 50px; padding-bottom: 20px;">
-  <!-- row-cols-md-4 buat ngatur besar kecilnya semua card -->
+  <!-- Card Valorant -->
+  <div class="container">
+    <div class="row">
+      <div class="col mb-5">
+            <div class="card" style="width: 18rem;">
+              <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+      </div>
+        <div class="col mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </div>
+      </div>
+  </div>
+  <!-- End Card C -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <a href="game.php" style="color:black;">
-        <h5 class="card-title">Perlombaan</h5>
-        <p class="card-text">E-Sport</p>
-        </a>
-        </center>
+  <!-- Card Mobile Legends -->
+    <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="col mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </div>
+      </div>
+      <div class="col">
+      <div class="col mb-5">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
       </div>
     </div>
+    </div>
   </div>
+  <!-- End Card Mobile Legends -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://static.theceomagazine.net/wp-content/uploads/2018/08/16090106/Deep-sea-tourism_Sam-McKeith.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <a href="game.php" style="color:black;">
-        <h5 class="card-title">Perlombaan E-Sport</h5>
-        <p class="card-text">Kuota : 50 orang</p>
-        </a>
-        </center>
+  <!-- Card Pubg -->
+  <div class="container">
+    <div class="row">
+      <div class="col mb-5">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
       </div>
+        <div class="col mb-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore? Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </div>
     </div>
   </div>
+  <!-- End Card Pubg -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-      <center>
-        <h5 class="card-title">Perlombaan E-Sport</h5>
-        </center>
-      </div>
-    </div>
-  </div>
-
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://static.theceomagazine.net/wp-content/uploads/2018/08/16090106/Deep-sea-tourism_Sam-McKeith.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <h5 class="card-title">E-Sport</h5>
-        </center>  
-    </div>
-    </div>
-  </div>
-
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <!-- End Card Daftar Lomba -->
+</div>
+<!-- End Card Daftar Lomba -->
 
 </div>
 <!-- End Body -->
