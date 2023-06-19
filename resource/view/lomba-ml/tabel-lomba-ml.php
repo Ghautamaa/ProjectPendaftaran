@@ -38,7 +38,8 @@
                 <div class="col-md-12 text-center py-3">
                     <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA MOBILE LEGENDS</h2>
                 </div>
-                <div class="col-md text-center">
+            <div class="row">
+                <div class="col-md-12 text-center">
                     <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
                         <thead>
                             <tr>
