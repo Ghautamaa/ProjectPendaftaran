@@ -1,11 +1,10 @@
-<!-- Baru front end aja ni -->
 <!-- Font style sama icon blum di add -->
 <!-- Nav sama footer juga -->
 
 <!-- rapiin klo niat  -->
 <!-- malas css -->
 
-<!-- blum ad database, blum di test -->
+<!-- // udh ditest, mau jalan, di punyaku sih... -->
 
 <?php 
     include '../../../backend/connection.php';
@@ -33,7 +32,7 @@
 
     <!-- Tabel lomba ml  -->
     <section id="tabel">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center py-3">
                     <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA MOBILE LEGENDS</h2>
@@ -50,6 +49,7 @@
                                 <th>Nama Anggota 2</th>
                                 <th>Nama Anggota 3</th>
                                 <th>Nama Anggota 4</th>
+                                <th>Kategori</th>
                                 <th>No HP</th>
                                 <th>Aksi</th>
                             </tr>
@@ -58,18 +58,22 @@
                         <tbody>
                             <?php
                             
-                            $sql = "SELECT * FROM tb_peserta";
+                            $sql = "SELECT tb_peserta.* ,tb_kategorilomba.*
+                                    FROM tb_peserta 
+                                    INNER JOIN tb_kategorilomba 
+                                    ON tb_peserta.kategori_id = tb_kategorilomba.id";
                             $query = mysqli_query($db, $sql);
                             $no = 1;
-                            while ($peserta = mysqli_fetch_array($query)) {
+                            while ($peserta = mysqli_fetch_assoc($query)) {
                                 echo "<tr>";
-                                echo "<td>".$no."</td>";
+                                echo "<td class='fw-bold'>".$no."</td>";
                                 echo "<td>".$peserta['tim']."</td>";
                                 echo "<td>".$peserta['ketua']."</td>";
                                 echo "<td>".$peserta['anggota1']."</td>";
                                 echo "<td>".$peserta['anggota2']."</td>";
                                 echo "<td>".$peserta['anggota3']."</td>";
                                 echo "<td>".$peserta['anggota4']."</td>";
+                                echo "<td>".$peserta['kategori']."</td>";
                                 echo "<td>".$peserta['telp']."</td>";
                                 echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
                                 echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold'>Hapus</button></a></td>";
@@ -81,6 +85,11 @@
                             
                         </tbody>
                     </table>
+                    <div class="d-flex justify-content-end">
+                            <a href="form-lomba-ml.php">
+                                <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>

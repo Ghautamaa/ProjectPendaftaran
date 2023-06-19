@@ -11,8 +11,8 @@ if (isset($_POST['submit'])) {
     $anggota3 = htmlspecialchars($_POST['anggota3']);
     $anggota4 = htmlspecialchars($_POST['anggota4']);
     $telp = htmlspecialchars($_POST['telp']);
-    $kategori_id = htmlspecialchars($_POST['IdKategori']);
-    $user_id = htmlspecialchars($_POST['IdUser']);
+    $kategori_id = htmlspecialchars($_POST['kategori_id']);
+    $user_id = htmlspecialchars($_POST['user_id']);
 
     $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, anggota4, telp, kategori_id, user_id)
             VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$telp', '$kategori_id', '$user_id')";

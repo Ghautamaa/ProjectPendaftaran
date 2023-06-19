@@ -56,8 +56,8 @@
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
                 <form action="proses-simpan-ml.php" method="post">
                     <!-- input id kategori & id user, edit klo gk perlu -->
-                    <input type="hidden" name="IdKategori" value="1">
-                    <input type="hidden" name="IdUser" value="1">
+                    <input type="hidden" name="kategori_id" value="3">
+                    <input type="hidden" name="user_id" value="1">
                     <!--  -->
                     <div class="mb-1 pt-3">
                         <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
