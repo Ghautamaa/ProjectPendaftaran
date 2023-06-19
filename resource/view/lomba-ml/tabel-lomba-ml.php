@@ -8,7 +8,9 @@
 <!-- blum ad database, blum di test -->
 
 <?php 
-// include '../../../backend/config/connection.php'
+    include '../../../backend/connection.php';
+
+    
 ?>
 
 <!doctype html>
