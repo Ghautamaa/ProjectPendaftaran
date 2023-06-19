@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2023 at 04:09 AM
+-- Generation Time: Jun 19, 2023 at 07:17 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -49,6 +49,7 @@ INSERT INTO `tb_kategorilomba` (`id`, `kategori`) VALUES
 
 CREATE TABLE `tb_peserta` (
   `id` int(15) NOT NULL,
+  `tim` varchar(255) NOT NULL,
   `ketua` varchar(100) NOT NULL,
   `anggota1` varchar(100) NOT NULL,
   `anggota2` varchar(100) NOT NULL,
@@ -63,9 +64,17 @@ CREATE TABLE `tb_peserta` (
 -- Dumping data for table `tb_peserta`
 --
 
-INSERT INTO `tb_peserta` (`id`, `ketua`, `anggota1`, `anggota2`, `anggota3`, `anggota4`, `telp`, `kategori_id`, `user_id`) VALUES
-(1, 'juven', 'guntur', 'renra', 'yoga', 'yoga2', '123', 1, 1),
-(3, 'juven', 'guntur', 'renra', 'yoga', 'yoga2', '1234', 3, 1);
+INSERT INTO `tb_peserta` (`id`, `tim`, `ketua`, `anggota1`, `anggota2`, `anggota3`, `anggota4`, `telp`, `kategori_id`, `user_id`) VALUES
+(1, '', 'juven', 'guntur', 'renra', 'yoga', 'yoga2', '123', 1, 1),
+(3, '', 'juven', 'guntur', 'renra', 'yoga', 'yoga2', '1234', 3, 1),
+(4, 'Ronin', 'Kamael', 'Imanuel', 'Renra', 'Surya', 'Dharma', '01', 1, 1),
+(5, 'Dorime', 'Kadek', 'Guntur', 'Dwi', 'Artha', 'Putra', '10', 1, 1),
+(6, 'a', 'a', 'a', 'a', 'a', 'a', '001', 1, 1),
+(7, 'a', 'a', 'a', 'a', 'a', 'a', '1', 1, 1),
+(9, 'b', 'b', 'b', 'b', 'b', 'b', 'b', 1, 1),
+(10, 'ml', 'ml', 'ml', 'ml', 'ml', 'ml', 'ml', 1, 1),
+(11, 'ml2', 'ml2', 'ml2', 'ml2', 'ml2', 'ml2', 'ml2', 2, 1),
+(12, 'mlbb', 'mlbb', 'mlbb', 'mlbb', 'mlbb', 'mlbb', 'mlbb', 3, 1);
 
 -- --------------------------------------------------------
 
@@ -126,7 +135,7 @@ ALTER TABLE `tb_kategorilomba`
 -- AUTO_INCREMENT for table `tb_peserta`
 --
 ALTER TABLE `tb_peserta`
-  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
