@@ -9,8 +9,6 @@
 
 <?php 
     include '../../../backend/connection.php';
-
-    
 ?>
 
 <!doctype html>
@@ -60,68 +58,27 @@
                         <tbody>
                             <?php
                             
-                            // $sql = "SELECT * FROM tb_peserta_ml";
-                            // $query = mysqli_query($db, $sql);
-                            // $no = 1;
-                            // while ($peserta = mysqli_fetch_array($query)) {
-                            //     echo "<tr>";
-                            //     echo "<td>".$no."</td>";
-                            //     echo "<td>".$peserta['namaTim']."</td>";
-                            //     echo "<td>".$peserta['namaAnggota1']."</td>";
-                            //     echo "<td>".$peserta['namaAnggota2']."</td>";
-                            //     echo "<td>".$peserta['namaAnggota3']."</td>";
-                            //     echo "<td>".$peserta['namaAnggota4']."</td>";
-                            //     echo "<td>".$peserta['noHP']."</td>";
-                            //     echo "<td>";
-                            //     echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
-                            //     echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold'>Hapus</button></a></td>";
-                            //     echo "</tr>";
-                            //     $no++;
-                            // }
+                            $sql = "SELECT * FROM tb_peserta";
+                            $query = mysqli_query($db, $sql);
+                            $no = 1;
+                            while ($peserta = mysqli_fetch_array($query)) {
+                                echo "<tr>";
+                                echo "<td>".$no."</td>";
+                                echo "<td>".$peserta['tim']."</td>";
+                                echo "<td>".$peserta['ketua']."</td>";
+                                echo "<td>".$peserta['anggota1']."</td>";
+                                echo "<td>".$peserta['anggota2']."</td>";
+                                echo "<td>".$peserta['anggota3']."</td>";
+                                echo "<td>".$peserta['anggota4']."</td>";
+                                echo "<td>".$peserta['telp']."</td>";
+                                echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
+                                echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold'>Hapus</button></a></td>";
+                                echo "</tr>";
+                                $no++;
+                            }
 
                             ?>
-                            <tr>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>
-                                    <a href="form-edit-ml.php"><button class="btn btn-sm btn-warning text-white fw-bold">Edit</button></a> |
-                                    <a href="href='form-edit-ml.php"><button class="btn btn-sm btn-danger text-white fw-bold" onclick="return ('Apakah anda yakin ingin menghapus ?')">Hapus</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>
-                                    <a href=""><button class="btn btn-sm btn-warning text-white fw-bold">Edit</button></a> |
-                                    <a href=""><button class="btn btn-sm btn-danger text-white fw-bold">Hapus</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>Lorem.</td>
-                                <td>
-                                    <a href=""><button class="btn btn-sm btn-warning text-white fw-bold">Edit</button></a> |
-                                    <a href=""><button class="btn btn-sm btn-danger text-white fw-bold">Hapus</button></a>
-                                </td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
