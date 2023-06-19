@@ -1,21 +1,21 @@
 <?php
 include '../../../backend/connection.php';
 
-// blum di test, blum ada database
+// udh ditest, mau jalan, di punyaku sih...
 
 if (isset($_POST['submit'])) {
-    $namaTim = htmlspecialchars($_POST['namaTim']);
-    $namaKetua = htmlspecialchars($_POST['namaKetua']);
-    $namaAnggota1 = htmlspecialchars($_POST['namaAnggota1']);
-    $namaAnggota2 = htmlspecialchars($_POST['namaAnggota2']);
-    $namaAnggota3 = htmlspecialchars($_POST['namaAnggota3']);
-    $namaAnggota4 = htmlspecialchars($_POST['namaAnggota4']);
-    $noHP = htmlspecialchars($_POST['noHP']);
-    $IdKategori = htmlspecialchars($_POST['IdKategori']);
-    $IdUser = htmlspecialchars($_POST['IdUser']);
+    $tim = htmlspecialchars($_POST['tim']);
+    $ketua = htmlspecialchars($_POST['ketua']);
+    $anggota1 = htmlspecialchars($_POST['anggota1']);
+    $anggota2 = htmlspecialchars($_POST['anggota2']);
+    $anggota3 = htmlspecialchars($_POST['anggota3']);
+    $anggota4 = htmlspecialchars($_POST['anggota4']);
+    $telp = htmlspecialchars($_POST['telp']);
+    $kategori_id = htmlspecialchars($_POST['IdKategori']);
+    $user_id = htmlspecialchars($_POST['IdUser']);
 
     $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, anggota4, telp, kategori_id, user_id)
-            VALUES ('$namaTim', '$namaKetua', '$namaAnggota1', '$namaAnggota2', '$namaAnggota3', '$namaAnggota4', '$noHP', '$IdKategori', '$IdUser')";
+            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$telp', '$kategori_id', '$user_id')";
     
     $query = mysqli_query($db, $sql);
     if ($query) {
