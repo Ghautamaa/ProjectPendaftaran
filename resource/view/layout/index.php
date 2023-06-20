@@ -114,34 +114,34 @@
   </div>
   
   <!-- Card Valorant -->
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-md-5">
-      <div class="card rounded" style="width :auto; ">
-        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width :auto; ">
+          <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+          
+          <!-- Teks -->
+          <div class="card-body text-white text-center">
+            <h2 class="card-title">Valorant</h5>
+            <h6 class="card-text">Game FPS 5 ORANG</h6>
+            <a href="#" class="btn btn-success text-white">Daftar</a>
+          </div>
+          <!-- End Teks -->
         
-        <!-- Teks -->
-        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
-          <h2 class="card-title">Valorant</h5>
-          <h6 class="card-text">Game FPS 5 ORANG</h6>
-          <a href="#" class="btn btn-success text-white">Daftar</a>
         </div>
-        <!-- End Teks -->
-      
+      </div>
+    <!-- Syarat -->
+      <div class="col-md-7">
+        <h3>Syarat Valorant</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+        </p>
       </div>
     </div>
-  <!-- Syarat -->
-    <div class="col-md-5">
-      <h3>Syarat Valorant</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-      </p>
-    </div>
   </div>
-</div>
   <!-- End Syarat -->
   <!-- End Card Valorant -->
 
@@ -152,7 +152,7 @@
   <div class="container-fluid">
   <div class="row justify-content-center">
     <!-- Syarat -->
-      <div class="col-md-5">
+      <div class="col-md-7">
         <h3>Syarat Valorant</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
@@ -160,12 +160,13 @@
         </p>
       </div>
       <!-- End Syarat -->
-    <div class="col-md-5">
-      <div class="card rounded" style="width :auto; ">
+
+    <div class="col-md-3">
+      <div class="card bg-dark" style="width :auto; ">
         <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
         
         <!-- Teks -->
-        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+        <div class="card-body text-white text-center">
           <h2 class="card-title">Valorant</h5>
           <h6 class="card-text">Game FPS 5 ORANG</h6>
           <a href="#" class="btn btn-success text-white">Daftar</a>
@@ -184,12 +185,12 @@
   <!-- Card PUBG-M -->
 <div class="container-fluid">
   <div class="row justify-content-center">
-    <div class="col-md-5">
-      <div class="card rounded" style="width :auto; ">
+    <div class="col-md-3">
+      <div class="card bg-dark" style="width :auto; ">
         <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
         
         <!-- Teks -->
-        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+        <div class="card-body bg-dark text-white text-center">
           <h2 class="card-title">PUBG-MOBILE</h5>
           <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
           <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
@@ -199,7 +200,7 @@
       </div>
     </div>
   <!-- Syarat -->
-    <div class="col-md-5">
+    <div class="col-md-7">
       <h3>Syarat PUBG-MOBILE</h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
