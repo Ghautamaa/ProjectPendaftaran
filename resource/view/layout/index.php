@@ -1,12 +1,34 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+
+      /* Buat table */
+      .bg-image {
+        background-image: url(../../img/ml.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #tb {
+      background-color: rgba(255, 255, 255, 0.50);
+      } 
+  .table1, th, td {
+    border: 1px  #999;
+    padding: 8px 20px;
+    background-color: rgba(255, 255, 255, 0.);
+  }
+
+    </style>
+
+
 
     <title>Home PNB EC</title>
   </head>
@@ -42,36 +64,37 @@
       </nav>
     <!-- End Nav -->
 
-<!-- Body -->
-<div id="carouselExampleIndicators" class="carousel slide w-80" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+  <!-- Body -->
+  
 
-<!-- Slide Gambar -->
+    <!-- Slide Gambar -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../../img/valorant.jpg" class="d-block w-100" alt="...">
+      <img src="../../img/ml.png" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="../../img/ml.png" class="d-block w-100" alt="...">
+      <img src="../../img/valorant_card.jpg" class="d-block w-100" >
     </div>
     <div class="carousel-item">
-      <img src="https://esports.id/img/article/446720191210042846.jpg" class="d-block w-100" alt="...">
+      <img src="../../img/pubg.webp" class="d-block w-100">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="visually-hidden">Next</span>
   </button>
 </div>
-<!-- End Slide Gambar -->
+    <!-- End Slide Gambar -->
 
 <br>
 <br>
@@ -118,8 +141,7 @@
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
-          
+          <img src="../../img/valorant_card.avif" class="card-img-top">
           <!-- Teks -->
           <div class="card-body text-white text-center">
             <h2 class="card-title">Valorant</h5>
@@ -163,7 +185,7 @@
 
     <div class="col-md-3">
       <div class="card bg-dark" style="width :auto; ">
-        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        <img src="../../img/valorant.jpg" class="card-img-top">
         
         <!-- Teks -->
         <div class="card-body text-white text-center">
@@ -183,53 +205,82 @@
   <br>
 
   <!-- Card PUBG-M -->
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-md-3">
-      <div class="card bg-dark" style="width :auto; ">
-        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width :auto; ">
+          <img src="../../img/pubg_card.png" class="card-img-top">
+          
+          <!-- Teks -->
+          <div class="card-body bg-dark text-white text-center">
+            <h2 class="card-title">PUBG-MOBILE</h5>
+            <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
+            <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
+          </div>
+          <!-- End Teks -->
         
-        <!-- Teks -->
-        <div class="card-body bg-dark text-white text-center">
-          <h2 class="card-title">PUBG-MOBILE</h5>
-          <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
-          <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
         </div>
-        <!-- End Teks -->
-      
+      </div>
+    <!-- Syarat -->
+      <div class="col-md-7">
+        <h3>Syarat PUBG-MOBILE</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </p>
       </div>
     </div>
-  <!-- Syarat -->
-    <div class="col-md-7">
-      <h3>Syarat PUBG-MOBILE</h3>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-      </p>
-    </div>
   </div>
-</div>
   <!-- End Syarat -->
-
   <!-- End Card PUBG-M -->
-
 </div>
 <!-- End Card Daftar Lomba -->
 
+
+
+    <!-- Jadwal Lomba -->
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-md-12 mt-5">
+          <div class="bg-image rounded-4 p-3">
+            <div class="text-white" id="tb">
+            <table class="table1 text-black d-flex justify-content-between px-4" >
+                <tr>
+                <th scope="row">1</th>
+                <td class="">Mark</td>
+                <td class="non-transparent">Otto</td>
+                <td class="non-transparent">@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td class="non-transparent">Jacob</td>
+                <td class="non-transparent">Thornton</td>
+                <td class="non-transparent">@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td class="non-transparent">Larry the Bird</td>
+                <td class="non-transparent">@twitter</td>
+                <td class="non-transparent">@twitter</td>
+              </tr>
+              </table>  
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>      
+    <!-- End Jadwal -->
+
+
+
+
+
+
+
 </div>
-<!-- End Body -->
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
   </body>
+</html>
