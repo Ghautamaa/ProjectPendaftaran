@@ -23,6 +23,11 @@ $peserta = mysqli_fetch_array($query);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
+<style>
+    body{
+        background-image: url('../../img/val_bg4.png');
+    }
+</style>
 
   <body style="background-color: #E6F6F5; font-family: 'Montserrat', sans-serif; " >">
     
@@ -56,11 +61,11 @@ $peserta = mysqli_fetch_array($query);
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA VALORANT</h2>
+                <h2 style="color: #FFF4F4;">EDIT PENDAFTARAN LOMBA VALORANT</h2>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
                 <form action="proses-edit-valorant.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mt-4 pt-3">
@@ -92,7 +97,7 @@ $peserta = mysqli_fetch_array($query);
                         <input type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA" name="telp">
                     </div>   
                     <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold" name="submit">Edit</button> 
+                        <button type="submit" class="btn btn-lg btn-danger my-5 px-5 rounded-4 shadow fw-bold" name="submit">Edit</button> 
                     </div>
                 </form>
             </div>

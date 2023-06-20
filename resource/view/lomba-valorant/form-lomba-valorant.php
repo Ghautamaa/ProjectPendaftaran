@@ -18,7 +18,7 @@ include '../../../backend/connection.php';
         background-image: url('../../img/val_bg4.png');
     }
 </style>
-</style>
+
   <body style="background-color: #E6F6F5;font-family: 'Montserrat', sans-serif; " >
     
   <?php

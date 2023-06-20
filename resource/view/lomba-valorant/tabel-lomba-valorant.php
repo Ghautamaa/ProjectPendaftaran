@@ -29,6 +29,10 @@ include '../../../backend/connection.php'
         body {
             background-color: #E6F6F5;
         }
+        body {
+        background-image: url('../../img/val_bg4.png');
+        }
+        
     </style>
   </head>
 
@@ -60,12 +64,12 @@ include '../../../backend/connection.php'
 
     <!-- Tabel lomba ml  -->
     <section id="tabel">
-        <!-- <div class="container"> -->
-            <div class="row">
-                <div class="col-md-12 text-center py-3">
-                    <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA VALORANT</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center py-3">
+                    <h2 style="color: #FFF4F4;">DAFTAR PESERTA LOMBA VALORANT</h2>
                 </div>
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 rounded-5 mb-2 text-center">
                     <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
                         <thead>
                             <tr>
@@ -117,7 +121,7 @@ include '../../../backend/connection.php'
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
     </section>
     <!-- Tabel lomba ml end -->
 
