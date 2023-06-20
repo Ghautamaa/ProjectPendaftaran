@@ -141,7 +141,7 @@
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/valorant_card.avif" class="card-img-top">
+          <img src="../../img/val_bg4.png" class="card-img-top">
           <!-- Teks -->
           <div class="card-body text-white text-center">
             <h2 class="card-title">Valorant</h5>
