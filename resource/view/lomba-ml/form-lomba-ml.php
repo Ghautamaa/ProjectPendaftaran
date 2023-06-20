@@ -1,8 +1,4 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
+<!-- Nav , footer, ikon blum -->
 
 
 
@@ -21,9 +17,10 @@
     <style>
     body {
         background-image: url('../../img/ml_bg.jpg');
-        /* background-size: auto; */
-        /* background-position: center; */
         font-family: 'Montserrat', sans-serif;
+    }
+    .bg-form{
+        background-color: #212a40;
     }
     </style>
   </head>
@@ -36,13 +33,13 @@
 
         echo "<div class='container'>
                 <div class='row justify-content-center'>
-                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "sukses") {
+                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "Sukses") {
             echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
-        } else {
+        } else if ($status == "Gagal") {
             echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
@@ -66,7 +63,7 @@
         <!-- header form end -->
         <!-- form -->
         <div class="row justify-content-center">
-            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5 bg-form">
                 <form action="proses-simpan-ml.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="3">

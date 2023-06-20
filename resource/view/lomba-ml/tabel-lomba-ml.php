@@ -1,8 +1,5 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
+<!-- Nav , footer, ikon blum -->
 
-<!-- rapiin klo niat  -->
-<!-- malas css -->
 
 <?php 
     include '../../../backend/connection.php';
@@ -22,17 +19,12 @@
     <!-- CSS -->
     <style>
         .table thead tr th {
-            background-color: #0B132B;
+            background-color: #212a40;
             color: white;
         }
         body {
             background-image: url('../../img/ml_bg.jpg');
-            /* background-size: auto; */
-            /* background-position: center; */
             font-family: 'Montserrat', sans-serif;
-        }
-        h2 {
-            color: white;
         }
     </style>
   </head>
@@ -46,13 +38,13 @@
 
         echo "<div class='container'>
                 <div class='row justify-content-center'>
-                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "sukses") {
+                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "Sukses") {
             echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
-        } else {
+        } else if ($status == "Gagal") {
             echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
@@ -69,14 +61,14 @@
         <div class="container">
             <!-- header tabel -->
             <div class="row justify-content-center">
-                <div class="col-md-12 text-center py-3">
+                <div class="col-sm-12 text-center text-white py-3">
                     <h2>DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             </div>
             <!-- header tabel end -->
             <!-- tabel -->
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-sm-12 text-center">
                     <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
                         <thead>
                             <tr>
@@ -93,7 +85,6 @@
                         </thead>
                         <tbody>
                             <?php
-                            
                             $sql = "SELECT *
                                     FROM tb_peserta 
                                     WHERE kategori_id = 3";

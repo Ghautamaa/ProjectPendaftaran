@@ -23,9 +23,9 @@ if (isset($_POST['submit'])) {
     
     $query = mysqli_query($db, $sql);
     if ($query) {
-        header("Location: tabel-lomba-ml.php?status=sukses");
+        header("Location: form-edit-ml.php?status=Sukses&id=$id");
     } else {
-        header("Location: tabel-lomba-ml.php?status=gagal");
+        header("Location: form-edit-ml.php?status=Gagal&id=$id");
     }
 } else {
     die ("Akses tidak diijinkan");

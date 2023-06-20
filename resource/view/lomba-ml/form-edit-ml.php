@@ -1,9 +1,4 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
+<!-- Nav , footer, ikon blum -->
 
 <?php
 include '../../../backend/connection.php';
@@ -34,32 +29,29 @@ $peserta = mysqli_fetch_array($query);
     <style>
     body {
         background-image: url('../../img/ml_bg.jpg');
-        /* background-size: auto; */
-        /* background-position: center; */
         font-family: 'Montserrat', sans-serif;
     }
-    h2 {
-        color: white;
+    .bg-form{
+        background-color: #212a40;
     }
     </style>
   </head>
 
   <body style="background-color: #E6F6F5;">
-
-      <!-- PHP untuk menampilkan status pendaftaran -->
-      <?php
+    <!-- PHP untuk menampilkan status pendaftaran -->
+    <?php
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
 
         echo "<div class='container'>
                 <div class='row justify-content-center'>
-                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "sukses") {
+                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "Sukses") {
             echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
-        } else {
+        } else if ($status == "Gagal") {
             echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
@@ -76,14 +68,14 @@ $peserta = mysqli_fetch_array($query);
     <div class="container">
         <!-- header form-->
         <div class="row justify-content-center">
-            <div class="col-md-4 p-2 m-2 text-center fw-bolder">
+            <div class="col-md-4 p-2 m-2 text-center text-white fw-bolder">
                 <h2>EDIT PENDAFTARAN LOMBA MLBB</h2>
             </div>
         </div>
         <!-- header form end-->
         <!-- form -->
         <div class="row justify-content-center">
-            <div class="col-md-6 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-6 rounded-3 mb-2 text-white px-5 bg-form">
                 <form action="proses-edit-ml.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mb-1 pt-3">
