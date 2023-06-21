@@ -1,3 +1,12 @@
+<?php
+  @include '../../../backend/connection.php';
+
+  session_start();
+
+  if($_SESSION['peserta-page']!= "logged"){
+    header('location:../login/login.php');
+  }
+?>
 <!doctype html>
 <html lang="en">
 
@@ -58,7 +67,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="navbar-brand text-white" href="#"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
+            <a class="navbar-brand text-white" href="../login/logout.php"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
           </li>
         </ul>
       </nav>
