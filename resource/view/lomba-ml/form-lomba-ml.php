@@ -1,8 +1,4 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
+<!-- Nav , footer, ikon blum -->
 
 
 
@@ -13,11 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pendaftaran Lomba MLBB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <style>
+    body {
+        background-image: url('../../img/ml_bg.jpg');
+        font-family: 'Montserrat', sans-serif;
+    }
+    .bg-form{
+        background-color: #212a40;
+    }
+    </style>
   </head>
 
-  <body style="background-color: #E6F6F5;">
-    
-
+  <body >
     <!-- PHP untuk menampilkan status pendaftaran -->
     <?php
     if (isset ($_GET['status'])) {
@@ -25,13 +33,13 @@
 
         echo "<div class='container'>
                 <div class='row justify-content-center'>
-                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "sukses") {
+                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
+        if ($status == "Sukses") {
             echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
-        } else {
+        } else if ($status == "Gagal") {
             echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
@@ -48,14 +56,14 @@
     <div class="container">
         <!-- header form -->
         <div class="row justify-content-center">
-            <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">PENDAFTARAN LOMBA MOBILE LEGENDS</h2>
+            <div class="col-md-4 p-2 m-2 text-center text-white fw-bolder">
+                <h2>PENDAFTARAN LOMBA MOBILE LEGENDS</h2>
             </div>
         </div>
         <!-- header form end -->
         <!-- form -->
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5 bg-form">
                 <form action="proses-simpan-ml.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="3">
