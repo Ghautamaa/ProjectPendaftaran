@@ -7,7 +7,6 @@
     header('location:../login/login.php');
   }
 ?>
-
 <!doctype html>
 <html lang="en">
 
