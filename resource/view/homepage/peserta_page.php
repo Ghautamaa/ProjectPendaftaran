@@ -1,3 +1,13 @@
+<?php
+  @include '../../../backend/connection.php';
+
+  session_start();
+
+  if($_SESSION['peserta-page']!= "logged"){
+    header('location:../login/login.php');
+  }
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,12 +18,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Dashboard</title>
+    <title>Home PNB EC</title>
   </head>
   <body>
  
     <!-- Nav -->
-    <nav class="navbar navbar-light fixed-top" style="background-color: rgba(1, 1, 1, 0.95);">
+    <nav class="navbar p-3 mb-2 bg-dark text-white fixed-top">
       <a class="navbar-brand" href="#" style="color : White;">
         <img src="https://stickershop.line-scdn.net/stickershop/v1/product/9738038/LINEStorePC/main.png" width="30" height="30" class="d-inline-block align-top" alt="">
         PNB EC
@@ -36,26 +46,9 @@
           </li>
 
           <li class="nav-item">
-            <a class="navbar-brand text-white" href="#"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
+            <a class="navbar-brand text-white" href="../login/logout.php"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
           </li>
-          
-          <!-- Dropdown Item -->
-          <!-- <li class="nav-item">  
-          <div class="btn-group">
-              <a class="navbar-brand" data-toggle="dropdown" style="color : white;">Contact</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Valorant</a>
-                <a class="dropdown-item" href="#">PUBG Mobile</a>
-                <a class="dropdown-item" href="#">Mobile Legends</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Guide Book</a>
-              </div>
-            </div>
-          </li> -->
-          <!-- End Dropdown Item -->
-          
         </ul>
-        
       </nav>
     <!-- End Nav -->
 
@@ -115,74 +108,122 @@
 </div>
 
 <!-- End Kolom/Grid welcome -->
+<br>
+<br>
 
-<br>
-<br>
+
 
   <!-- Start Card Daftar Lomba-->
-  <div class="row row-cols-1 row-cols-md-3" style=" padding-top: 10px; padding-left: 50px; padding-right: 50px; padding-bottom: 20px;">
-  <!-- row-cols-md-4 buat ngatur besar kecilnya semua card -->
+  <div class="col-md-12 text-center py-3">
+      <h5 >#E-SPORT</h5>
+      <h1>
+          <span style="color: black;">E-SPORT</span>
+          <span style="color: #5BC0BE;">PNB EC</span>
+      </h1>
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <a href="game.php" style="color:black;">
-        <h5 class="card-title">Perlombaan</h5>
-        <p class="card-text">E-Sport</p>
-        </a>
-        </center>
+  </div>
+  
+  <!-- Card Valorant -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">Valorant</h5>
+          <h6 class="card-text">Game FPS 5 ORANG</h6>
+          <a href="#" class="btn btn-success text-white">Daftar</a>
+        </div>
+        <!-- End Teks -->
+      
+      </div>
+    </div>
+  <!-- Syarat -->
+    <div class="col-md-5">
+      <h3>Syarat Valorant</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+      </p>
+    </div>
+  </div>
+</div>
+  <!-- End Syarat -->
+  <!-- End Card Valorant -->
+
+  <br>
+  <br>
+
+  <!-- Card Mobile Legends -->
+  <div class="container-fluid">
+  <div class="row justify-content-center">
+    <!-- Syarat -->
+      <div class="col-md-5">
+        <h3>Syarat Valorant</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+        </p>
+      </div>
+      <!-- End Syarat -->
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">Valorant</h5>
+          <h6 class="card-text">Game FPS 5 ORANG</h6>
+          <a href="#" class="btn btn-success text-white">Daftar</a>
+        </div>
+        <!-- End Teks -->
+      
       </div>
     </div>
   </div>
+  </div>
+  <!-- End Card Mobile Legends -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://static.theceomagazine.net/wp-content/uploads/2018/08/16090106/Deep-sea-tourism_Sam-McKeith.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <a href="game.php" style="color:black;">
-        <h5 class="card-title">Perlombaan E-Sport</h5>
-        <p class="card-text">Kuota : 50 orang</p>
-        </a>
-        </center>
+  <br>
+  <br>
+
+  <!-- Card PUBG-M -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+      <div class="card rounded" style="width :auto; ">
+        <img src="../../img/valorant.jpg" class="card-img-top" alt="...">
+        
+        <!-- Teks -->
+        <div class="card-body p-3 mb-2 bg-dark text-white text-center">
+          <h2 class="card-title">PUBG-MOBILE</h5>
+          <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
+          <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
+        </div>
+        <!-- End Teks -->
+      
       </div>
     </div>
+  <!-- Syarat -->
+    <div class="col-md-5">
+      <h3>Syarat PUBG-MOBILE</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+        Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+      </p>
+    </div>
   </div>
+</div>
+  <!-- End Syarat -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-      <center>
-        <h5 class="card-title">Perlombaan E-Sport</h5>
-        </center>
-      </div>
-    </div>
-  </div>
+  <!-- End Card PUBG-M -->
 
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://static.theceomagazine.net/wp-content/uploads/2018/08/16090106/Deep-sea-tourism_Sam-McKeith.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <center>
-        <h5 class="card-title">E-Sport</h5>
-        </center>  
-    </div>
-    </div>
-  </div>
-
-  <div class="col mb-4">
-    <div class="card">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/rays-of-sunlight-into-the-underwater-cave-royalty-free-image-1665512420.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <!-- End Card Daftar Lomba -->
+</div>
+<!-- End Card Daftar Lomba -->
 
 </div>
 <!-- End Body -->

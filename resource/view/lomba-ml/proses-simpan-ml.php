@@ -1,25 +1,25 @@
 <?php
-include '../../../backend/config/connection.php';
-
-// blum di test, blum ada database
+include '../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
-    $namaTim = htmlspecialchars($_POST['namaTim']);
-    $namaKetua = htmlspecialchars($_POST['namaKetua']);
-    $namaAnggota1 = htmlspecialchars($_POST['namaAnggota1']);
-    $namaAnggota2 = htmlspecialchars($_POST['namaAnggota2']);
-    $namaAnggota3 = htmlspecialchars($_POST['namaAnggota3']);
-    $namaAnggota4 = htmlspecialchars($_POST['namaAnggota4']);
-    $noHP = htmlspecialchars($_POST['noHP']);
+    $tim = htmlspecialchars($_POST['tim']);
+    $ketua = htmlspecialchars($_POST['ketua']);
+    $anggota1 = htmlspecialchars($_POST['anggota1']);
+    $anggota2 = htmlspecialchars($_POST['anggota2']);
+    $anggota3 = htmlspecialchars($_POST['anggota3']);
+    $anggota4 = htmlspecialchars($_POST['anggota4']);
+    $telp = htmlspecialchars($_POST['telp']);
+    $kategori_id = htmlspecialchars($_POST['kategori_id']);
+    $user_id = htmlspecialchars($_POST['user_id']);
 
-    $sql = "INSERT INTO tb_peserta_ml (namaTim, namaKetua, namaAnggota1, namaAnggota2, namaAnggota3, namaAnggota4, noHP)
-            VALUES ('$namaTim', '$namaKetua', '$namaAnggota1', '$namaAnggota2', '$namaAnggota3', '$namaAnggota4', '$noHP')";
+    $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, anggota4, telp, kategori_id, user_id)
+            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$telp', '$kategori_id', '$user_id')";
     
     $query = mysqli_query($db, $sql);
     if ($query) {
-        header("Location: index.php?status=sukses");
+        header("Location: form-lomba-ml.php?status=sukses");
     } else {
-        header("Location: index.php?status=gagal");
+        header("Location: form-lomba-ml.php?status=gagal");
     }
 } else {
     die ("Akses tidak diijinkan");

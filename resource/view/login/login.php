@@ -1,30 +1,31 @@
 <?php
-require '../../../backend/connection.php';
-
-if (isset($_POST['submit'])) {
-
-    $email = mysqli_real_escape_string($db ,$_POST['email']);
-    $username = mysqli_real_escape_string($db, $_POST['username']);
+session_start();
+require_once '../../../backend/connection.php';
+if(isset($_POST['submit'])) {
+    $email = $_POST['email'];
     $password = md5($_POST['password']);
-    $kpassword = md5($_POST['kpassword']);
 
-    $cek = "SELECT * from tb_user where email = '$email', password = '$password' ";
+    $cek = "SELECT * FROM tb_user WHERE email = '$email' and password = '$password'";
     $result = mysqli_query($db, $cek);
 
-    if (mysqli_num_rows($result) > 0){
-        $row = mysqli_fetch_array($result);
-        if ($row['level'] == 'admin'){
-          $_SESSION['admin_name'] == $row['admin'];
-          header('location:admin_page.php');
-        } elseif ($row ['level'] == 'admin'){
-          $_SESSION['peserta_name'] == $row['peserta'];
-          header('location:peserta_page.php');  
-        } 
+    if (mysqli_num_rows($result) > 0) {
+        $take = mysqli_fetch_array($result);                                                                                    
+        $level = $take['level'];
 
-    } 
-    else {
-      $error [] = 'email atau password salah';
-    }  
+            if ($level == 'admin') {
+                $_SESSION['admin-page'] = 'logged';
+                $_SESSION['role'] = 'admin';
+                header('Location: ../homepage/admin_page.php');
+                exit();
+            } elseif($level == 'peserta') {
+              $_SESSION['peserta-page'] = 'logged';
+              $_SESSION['role'] = 'peserta';
+              header('Location: ../homepage/peserta_page.php');
+              exit();
+            }
+    } else {
+        $error2 [] = 'Email atau Password salah';
+    }
 }
 ?>
 <!doctype html>
@@ -47,29 +48,30 @@ if (isset($_POST['submit'])) {
             <div class=" p-2 m-2 pt-5 text-center fw-bolder">
                 <h2 style="color: #3A506c ;">LOGIN</h2>
             </div>
+                    
+            <div class="d-flex justify-content-center align-items-center w-100">
+            <div class="w-50 p-3 rounded-4 text-white d-flex justify-content-center align-items-center " style="background-color: #212a40;">
+                <form method="post" class="w-100 p-3">
+                    <div class="mb-1 pt-3">
                     <?php
-                      if(isset($error)){
-                        foreach($error as $error){
+                      if(isset($error2)){
+                        foreach($error2 as $error2){
                           echo'
                           <div class=" text-center  justify-content-center align-items-center  rounded-4 w-100" style="background-color: #ff0000;">
-                          <span class = "error-msg">'.$error.'</span>
+                          <span class = "error-msg">'.$error2.'</span>
                           </div>';
                         }
                       }
                     ?>
-            <div class="d-flex justify-content-center align-items-center w-100">
-            <div class="w-50 p-3 rounded-4 text-white d-flex justify-content-center align-items-center " style="background-color: #212a40;">
-                <form action="" method="post" class="w-100 p-3">
-                    <div class="mb-1 pt-3">
                         <label for="namaTim" class="form-label ms-3 fw-bold">Email</label>
-                        <input type="text" class="form-control rounded-pill" id="namaTim" placeholder="domain@aasd.asd">
+                        <input type="text" class="form-control rounded-pill" name="email" id="namaTim" placeholder="domain@aasd.asd">
                     </div>
                     <div class="mt-4">
                         <label for=" " class="form-label ms-3 fw-bold">Password</label>
-                        <input type="password" class="form-control rounded-pill align-content-center" id="password" placeholder="*******">
+                        <input type="password" class="form-control rounded-pill align-content-center" name="password" id="password" placeholder="*******">
                     <div class="d-flex justify-content-between ms-3 my-4">
-                        <a style="text-decoration: none; color: #ffff;" class="color" href="daftar.php">Belum Punya Akun?</a>
-                        <button type="submit" class="btn btn-lg btn-success rounded-4 shadow fw-bold">LOGIN</button> 
+                        <a style="text-decoration: none; color: #ffff;" class="color" href="register.php">Belum Punya Akun?</a>
+                        <button type="submit" name="submit"  class="btn btn-lg btn-success rounded-4 shadow fw-bold">LOGIN</button> 
                     </div>
                 </form>
             </div>

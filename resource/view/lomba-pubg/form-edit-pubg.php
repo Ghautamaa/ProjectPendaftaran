@@ -1,15 +1,9 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
 
 <?php
 include '../../../backend/connection.php';
 
 if (!isset($_GET['id']) || $_GET['id'] == null) {
-    header("Location: tabel-lomba-ml.php");
+    header("Location: tabel-lomba-pubg.php");
 }
 
 $id = $_GET['id'];
@@ -24,7 +18,7 @@ $peserta = mysqli_fetch_array($query);
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit Pendaftaran Lomba MLBB</title>
+    <title>Edit Pendaftaran Lomba PUBG-MOBILE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
 
@@ -54,21 +48,19 @@ $peserta = mysqli_fetch_array($query);
         echo "</div>";
     }
     ?>
+        <!-- End Status -->
     
-  <!-- Form edit  -->
+  <!-- Form  -->
   <section id="form">
     <div class="container">
-        <!-- header form-->
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA MLBB</h2>
+                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA PUBG-MOBILE</h2>
             </div>
         </div>
-        <!-- header form end-->
-        <!-- form -->
         <div class="row justify-content-center">
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
-                <form action="proses-edit-ml.php" method="post">
+                <form action="proses-edit-pubg.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mb-1 pt-3">
                         <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
@@ -89,26 +81,20 @@ $peserta = mysqli_fetch_array($query);
                     <div class="mb-1">
                         <label for="anggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
                         <input name="anggota3" type="text" value="<?php echo $peserta['anggota3'] ?>" class="form-control rounded-pill" id="anggota3" placeholder="Nama Anggota 3">
-                    </div>
-                    <div class="mb-1">
-                        <label for="anggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
-                        <input name="anggota4" type="text" value="<?php echo $peserta['anggota4'] ?>" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
-                    </div>   
+                    </div> 
                     <div class="mb-1">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
-                    <div class="d-flex justify-content-between">
-                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
+                    <div class="d-flex justify-content-end">
                         <button name="submit" type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>
             </div>
         </div>
-        <!-- form end -->
     </div>
   </section>
-  <!-- Form edit end -->
+  <!-- Form end -->
 
 
 
