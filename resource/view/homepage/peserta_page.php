@@ -7,16 +7,19 @@
     header('location:../login/login.php');
   }
 ?>
+
 <!doctype html>
 <html lang="en">
 
   <head>
+    <!-- Hubungin ke bootstrap -->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <style>
 
       /* Buat table */
@@ -28,12 +31,13 @@
 
       #tb {
       background-color: rgba(255, 255, 255, 0.50);
-      } 
-  .table1, th, td {
-    border: 1px  #999;
-    padding: 8px 20px;
-    background-color: rgba(255, 255, 255, 0.);
-  }
+      }
+
+      .table1, th, td {
+        border: 1px  #999;
+        padding: 8px 20px;
+        background-color: rgba(255, 255, 255, 0.);
+      }
 
     </style>
 
@@ -78,71 +82,62 @@
 
     <!-- Slide Gambar -->
     <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../img/ml.png" class="d-block w-100">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" style="height : 600px;">
+        <div class="carousel-item active">
+          <img src="../../img/ml.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/valorant.jpg" class="d-block w-100" >
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/pubg.webp" class="d-block w-100">
+        </div>
+      </div>
+      <!-- Tombol Kekiri/Sebelumnya -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- Tombol Kekanan/Selanjutnya -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="../../img/valorant_card.jpg" class="d-block w-100" >
-    </div>
-    <div class="carousel-item">
-      <img src="../../img/pubg.webp" class="d-block w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
     <!-- End Slide Gambar -->
 
-<br>
-<br>
-<br>
-
-<!-- Start Kolom/Grid Welcome -->
-
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-md-5 ">
-      <h7>#Welcome To PNB EC</h7>
-      <h1>Apa Itu PNB EC ?</h1>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
-      <h4>
-        <li>Ayam Goreng</li>
-        <li>Sate Babi</li>
-        <li>Rumah</li>
-      </h4>
-    </div>
-    <div class="col-md-5 text-center">
-      <img src="../../img/ml.png" alt="" srcset="" width="100%">
+  <!-- Start Kolom/Grid Welcome -->
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-md-5 mt-5">
+        <h7>#Welcome To PNB EC</h7>
+        <h1>Apa Itu PNB EC ?</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
+        <h4>
+          <li>Ayam Goreng</li>
+          <li>Sate Babi</li>
+          <li>Rumah</li>
+        </h4>
+      </div>
+      <div class="col-md-5 mt-5 text-center">
+        <img src="../../img/ml.png" alt="" srcset="" width="100%">
+      </div>
     </div>
   </div>
-</div>
-
-<!-- End Kolom/Grid welcome -->
-<br>
-<br>
-
-
+  <!-- End Kolom/Grid welcome -->
 
   <!-- Start Card Daftar Lomba-->
-  <div class="col-md-12 text-center py-3">
+  <div class="col-md-12 mt-5 text-center py-3">
       <h5 >#E-SPORT</h5>
       <h1>
           <span style="color: black;">E-SPORT</span>
           <span style="color: #5BC0BE;">PNB EC</span>
       </h1>
-
   </div>
   
   <!-- Card Valorant -->
@@ -155,7 +150,7 @@
           <div class="card-body text-white text-center">
             <h2 class="card-title">Valorant</h5>
             <h6 class="card-text">Game FPS 5 ORANG</h6>
-            <a href="#" class="btn btn-success text-white">Daftar</a>
+            <a href="../lomba-Valorant/form-lomba-valorant.php" class="btn btn-success text-white">Daftar</a>
           </div>
           <!-- End Teks -->
         
@@ -176,15 +171,12 @@
   <!-- End Syarat -->
   <!-- End Card Valorant -->
 
-  <br>
-  <br>
-
   <!-- Card Mobile Legends -->
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
   <div class="row justify-content-center">
     <!-- Syarat -->
       <div class="col-md-7">
-        <h3>Syarat Valorant</h3>
+        <h3>Syarat Mobile Legends</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
           Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
@@ -198,9 +190,9 @@
         
         <!-- Teks -->
         <div class="card-body text-white text-center">
-          <h2 class="card-title">Valorant</h5>
-          <h6 class="card-text">Game FPS 5 ORANG</h6>
-          <a href="#" class="btn btn-success text-white">Daftar</a>
+          <h2 class="card-title">Mobile Legends</h5>
+          <h6 class="card-text">Game Moba 5 ORANG</h6>
+          <a href="../lomba-ml/form-lomba-ml.php" class="btn btn-success text-white">Daftar</a>
         </div>
         <!-- End Teks -->
       
@@ -210,11 +202,9 @@
   </div>
   <!-- End Card Mobile Legends -->
 
-  <br>
-  <br>
 
   <!-- Card PUBG-M -->
-  <div class="container-fluid">
+  <div class="container-fluid mt-5">
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
@@ -242,8 +232,8 @@
   </div>
   <!-- End Syarat -->
   <!-- End Card PUBG-M -->
-</div>
-<!-- End Card Daftar Lomba -->
+  </div>
+  <!-- End Card Daftar Lomba -->
 
 
 

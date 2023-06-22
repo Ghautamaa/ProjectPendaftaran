@@ -16,6 +16,7 @@ if (isset($_POST['submit'])) {
     $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, anggota4, telp, kategori_id, user_id)
             VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$telp', '$kategori_id', '$user_id')";
     
+    // Ngecek apakah berhasil ngirim apa kaga
     $query = mysqli_query($db, $sql);
     if ($query) {
         header("Location: form-lomba-pubg.php?status=sukses");

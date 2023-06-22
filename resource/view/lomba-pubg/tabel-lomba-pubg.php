@@ -1,11 +1,3 @@
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
-<!-- // udh ditest, mau jalan, di punyaku sih... -->
-
 <?php 
     include '../../../backend/connection.php';
 ?>
