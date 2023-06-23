@@ -64,7 +64,7 @@ if(isset($_POST['submit'])) {
                       }
                     ?>
                         <label for="namaTim" class="form-label ms-3 fw-bold">Email</label>
-                        <input type="text" class="form-control rounded-pill" name="email" id="namaTim" placeholder="domain@aasd.asd">
+                        <input type="text" class="form-control rounded-pill" name="email" id="email" placeholder="domain@aasd.asd">
                     </div>
                     <div class="mt-4">
                         <label for=" " class="form-label ms-3 fw-bold">Password</label>

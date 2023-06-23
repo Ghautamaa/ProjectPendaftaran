@@ -1,5 +1,5 @@
 <?php
-require '../../../backend/connection.php';
+include '../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
 
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
             $sql = "INSERT INTO tb_user
                     VALUES ('','$email', '$password', '$username','peserta')";
             $query = mysqli_query($db, $sql);
-            header("Location: ../login/register.php");
+            header("Location: ../login/login.php");
             
         }
     }
