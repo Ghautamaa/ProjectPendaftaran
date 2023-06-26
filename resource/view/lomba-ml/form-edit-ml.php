@@ -30,14 +30,16 @@ $peserta = mysqli_fetch_array($query);
     body {
         background-image: url('../../img/ml_bg.jpg');
         font-family: 'Montserrat', sans-serif;
+        background-size: cover;
     }
     .bg-form{
         background-color: #212a40;
+        opacity : 0.8;
     }
     </style>
   </head>
 
-  <body style="background-color: #E6F6F5;  opacity: 0.8;">">
+  <body style="background-color: #E6F6F5;">
     <!-- PHP untuk menampilkan status pendaftaran -->
     <?php
     if (isset ($_GET['status'])) {
