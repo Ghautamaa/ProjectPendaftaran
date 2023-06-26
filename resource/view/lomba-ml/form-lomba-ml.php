@@ -72,8 +72,8 @@
                     <input type="hidden" name="user_id" value="1">
                     <!--  -->
                     <div class="mb-1 pt-3">
-                        <label for="team" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input required type="text" name="team" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
+                        <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <input required type="text" name="tim" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
                     </div>
                     <div class="mb-1">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>

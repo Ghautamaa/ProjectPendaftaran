@@ -80,7 +80,7 @@ $peserta = mysqli_fetch_array($query);
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mb-1 pt-3">
                         <label for="team" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input name="team" type="text" value="<?php echo $peserta['team'] ?>" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
+                        <input name="team" type="text" value="<?php echo $peserta['tim'] ?>" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
                     </div>
                     <div class="mb-1">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>
