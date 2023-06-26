@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pendaftaran Lomba PUBG-Mobile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
         background-image: url('https://gamebrott.com/wp-content/uploads/2021/03/youtubegaming2560_1440.jpg');
         font-family: 'Montserrat', sans-serif;
+        background-size: cover;
     }
     .bg-form{
         background-color: #212a40;
+        opacity: 0.8;
     }
     </style>
 
@@ -58,7 +63,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B; opacity: 0.8;">
                 <form action="proses-simpan-pubg.php" method="post">
                     <!-- input id kategori & id user, edit klo gk perlu -->
                     <input type="hidden" name="kategori_id" value="2">
@@ -89,6 +94,7 @@
                         <input required type="text" name="telp" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-end">
+                    <a href="tabel-lomba-pubg.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" name="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Daftar</button> 
                     </div>
                 </form>

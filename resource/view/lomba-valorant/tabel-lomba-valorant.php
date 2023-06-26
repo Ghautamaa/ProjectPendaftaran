@@ -31,6 +31,7 @@ include '../../../backend/connection.php'
         }
         body {
         background-image: url('../../img/val_bg4.png');
+        background-size: cover;
         }
         
     </style>
