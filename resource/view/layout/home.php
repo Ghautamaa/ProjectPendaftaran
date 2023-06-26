@@ -1,80 +1,73 @@
 
-<style>
-      /* Buat table */
-      .bg-image {
-        background-image: url(../../img/ml.png);
-        background-size: cover;
-        background-position: center;
-      }
+      <style>
+            /* Buat table */
+            .bg-image {
+              background-image: url(../../img/ml.png);
+              background-size: cover;
+              background-position: center;
+            }
 
-      #tb {
-      background-color: rgba(255, 255, 255, 0.50);
-      } 
-  .table1, th, td {
-    border: 1px  #999;
-    padding: 8px 20px;
-    background-color: rgba(255, 255, 255, 0.);
-  }
-    </style>
-  <!-- Slide Gambar -->
-  <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../img/ml.png" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="../../img/valorant_card.jpg" class="d-block w-100" >
-    </div>
-    <div class="carousel-item">
-      <img src="../../img/pubg.webp" class="d-block w-100">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    <!-- End Slide Gambar -->
+            #tb {
+            background-color: rgba(255, 255, 255, 0.50);
+            } 
+            .table1, th, td {
+              border: 1px  #999;
+              padding: 8px 20px;
+              background-color: rgba(255, 255, 255, 0.);
+            }
+          </style>
+        <!-- Slide Gambar -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../img/ml.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/valorant.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/pubg.webp" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+          <!-- End Slide Gambar -->
 
-<br>
-<br>
-<br>
 
-<!-- Start Kolom/Grid Welcome -->
-
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-md-5 ">
-      <h7>#Welcome To PNB EC</h7>
-      <h1>Apa Itu PNB EC ?</h1>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
-      <h4>
-        <li>Ayam Goreng</li>
-        <li>Sate Babi</li>
-        <li>Rumah</li>
-      </h4>
+    <!-- Start Kolom/Grid Welcome -->
+    <div class="container-fluid pt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5 ">
+          <h7>#Welcome To PNB EC</h7>
+          <h1>Apa Itu PNB EC ?</h1>
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
+          <h4>
+            <li>Ayam Goreng</li>
+            <li>Sate Babi</li>
+            <li>Rumah</li>
+          </h4>
+        </div>
+        <div class="col-md-5 text-center">
+          <img src="../../img/ml.png" alt="" srcset="" width="100%">
+        </div>
+      </div>
     </div>
-    <div class="col-md-5 text-center">
-      <img src="../../img/ml.png" alt="" srcset="" width="100%">
-    </div>
-  </div>
-</div>
-
-<!-- End Kolom/Grid welcome -->
-<br>
-<br>
+    <!-- End Kolom/Grid welcome -->
 
   <!-- Start Card Daftar Lomba-->
-  <div class="col-md-12 text-center py-3">
+  <div class="col-md-12 text-center pt-5">
       <h5 >#E-SPORT</h5>
       <h1>
           <span style="color: black;">E-SPORT</span>
@@ -84,7 +77,7 @@
   </div>
   
   <!-- Card Valorant -->
-  <div class="container-fluid">
+  <div class="container-fluid pt-3">
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
@@ -101,13 +94,14 @@
       </div>
     <!-- Syarat -->
       <div class="col-md-7">
-        <h3>Syarat Valorant</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-        </p>
+        <div class="row justify-content-center">
+          <h3>Syarat Valorant</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+              Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+            </p>
       </div>
     </div>
   </div>
@@ -218,8 +212,28 @@
     <!-- End Jadwal -->
 
 
+    <!-- test -->
+    <div class="container-fluid pt-3">
+      <div class="row ">
 
-<H1>TEST TEST EH MONYET</H1>
+            <div class="card" style="width: 18rem;">
+              <img src="../../img/test.png" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+        
+        <div class="col-md-7">
+          <h1>Test</h1>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, cum rerum obcaecati quasi tempore sapiente alias suscipit similique inventore eveniet error. Dicta illum suscipit praesentium quos nihil quisquam sint. Unde!</h5>
+        </div>
+
+      </div>
+    </div>
+    <!-- test -->
+
 
 
 
