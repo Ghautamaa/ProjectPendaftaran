@@ -1,12 +1,3 @@
-<!-- Baru front end aja ni -->
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pendaftaran Lomba PUBG-Mobile</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
+    <style>
+        body {
+        background-image: url('https://gamebrott.com/wp-content/uploads/2021/03/youtubegaming2560_1440.jpg');
+        font-family: 'Montserrat', sans-serif;
+    }
+    .bg-form{
+        background-color: #212a40;
+    }
+    </style>
 
-  <body style="background-color: #E6F6F5;">
+</head>
+
+  <body>
     
 
     <!-- PHP untuk menampilkan status pendaftaran -->
@@ -46,10 +47,14 @@
 
   <!-- Form  -->
   <section id="form">
+    <!-- Biar Form berada ditengah -->
     <div class="container">
+        <!-- Form dan isi dalam form Ditengah -->
         <div class="row justify-content-center">
+            <!-- Teks Ditengah -->
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">PENDAFTARAN LOMBA PUBG-MOBILE</h2>
+                <!-- Warna Teks -->
+                <h2 style="color: White;">PENDAFTARAN LOMBA PUBG-MOBILE</h2>
             </div>
         </div>
         <div class="row justify-content-center">
