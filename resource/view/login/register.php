@@ -1,13 +1,12 @@
 <?php
-require '../../../backend/connection.php';
+include '../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
 
     $email = mysqli_real_escape_string($db ,$_POST['email']);
     $username = mysqli_real_escape_string($db, $_POST['username']);
-    $password = md5($_POST['password']);
-    $kpassword = md5($_POST['kpassword']);
-  
+    $password = (md5($_POST['password']));
+    $kpassword = (md5($_POST['kpassword']));
 
     $cek = "SELECT * from tb_user where email = '$email'";
     $result = mysqli_query($db, $cek);
@@ -49,7 +48,14 @@ if (isset($_POST['submit'])) {
   </head>
 
   <body style="background-color: #E6F6F5; font-family: 'Montserrat', sans-serif;">
-    
+  <style>
+    #form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  </style>
   <!-- Form  -->  
   <section id="form">
     <div class="container justify-content-center align-content-center">
@@ -116,8 +122,8 @@ if (isset($_POST['submit'])) {
                           <label for="kpassword" class="form-label ms-3">Konfirmasi Password</label>
                           <input type="password" class="form-control rounded-4" id="kpassword" placeholder="**********" name="kpassword">
                     </div>
-                    <div class="d-flex justify-content-between ms-3 my-5">
-                        <a style="text-decoration: none; color: #ffff;" class="color mt-2" href="login.php">Suda Punya Akun?</a>
+                    <div class="d-flex justify-content-between ms-1 my-4 pt-4">
+                        <a style="text-decoration: underline; color: #ffff; font-size: 14px;" class="color mt-3" href="login.php">Suda Punya Akun?</a>
                         <button type="submit" name="submit" class="btn btn-lg btn-secondary  rounded-4" class="background-color: #44908F;">Daftar</button> 
                     </div>
                     
