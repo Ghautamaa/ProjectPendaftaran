@@ -56,7 +56,7 @@ include '../../../backend/connection.php';
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40; opacity: 0.8;">
                 <form action="proses-simpan-valorant.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="1">

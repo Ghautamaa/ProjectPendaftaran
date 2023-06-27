@@ -19,7 +19,17 @@ $peserta = mysqli_fetch_array($query);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Edit Pendaftaran Lomba PUBG-MOBILE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+  <style>
+        body {
+        background-image: url('https://gamebrott.com/wp-content/uploads/2021/03/youtubegaming2560_1440.jpg');
+        font-family: 'Montserrat', sans-serif;
+        background-size: cover;
+    }
+    </style>
 
   <body style="background-color: #E6F6F5;">
 
@@ -54,34 +64,34 @@ $peserta = mysqli_fetch_array($query);
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA PUBG-MOBILE</h2>
+                <h2 style="color: #FFF4F4;">EDIT PENDAFTARAN LOMBA PUBG-MOBILE</h2>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40; opacity: 0.8;">
                 <form action="proses-edit-pubg.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <div class="mb-1 pt-3">
+                    <div class="mt-4 pt-3">
                         <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
                         <input name="tim" type="text" value="<?php echo $peserta['tim'] ?>" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>
                         <input name="ketua" type="text" value="<?php echo $peserta['ketua'] ?>" class="form-control rounded-pill" id="ketua" placeholder="Nama Ketua">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota1" class="form-label ms-3 fw-bold">Nama Anggota 1</label>
                         <input name="anggota1" type="text" value="<?php echo $peserta['anggota1'] ?>" class="form-control rounded-pill" id="anggota1" placeholder="Nama Anggota 1">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota2" class="form-label ms-3 fw-bold">Nama Anggota 2</label>
                         <input name="anggota2" type="text" value="<?php echo $peserta['anggota2'] ?>" class="form-control rounded-pill" id="anggota2" placeholder="Nama Anggota 2">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
                         <input name="anggota3" type="text" value="<?php echo $peserta['anggota3'] ?>" class="form-control rounded-pill" id="anggota3" placeholder="Nama Anggota 3">
                     </div> 
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   

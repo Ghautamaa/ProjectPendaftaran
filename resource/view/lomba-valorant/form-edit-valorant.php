@@ -65,7 +65,7 @@ $peserta = mysqli_fetch_array($query);
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40; opacity: 0.8;">
                 <form action="proses-edit-valorant.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
                     <div class="mt-4 pt-3">
