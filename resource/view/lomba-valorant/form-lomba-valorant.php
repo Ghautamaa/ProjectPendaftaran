@@ -16,6 +16,7 @@ include '../../../backend/connection.php';
 <style>
     body{
         background-image: url('../../img/val_bg4.png');
+        background-size: cover;
     }
 </style>
 
@@ -56,7 +57,7 @@ include '../../../backend/connection.php';
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40; opacity: 0.8;">
                 <form action="proses-simpan-valorant.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="1">
@@ -92,7 +93,7 @@ include '../../../backend/connection.php';
                     </div>   
                     <div class="d-flex justify-content-end">
                     <a href="tabel-lomba-valorant.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
-                        <button type="submit" class="btn btn-lg btn-danger my-5 px-5 rounded-4 shadow fw-bold" name="submit">Daftar</button> 
+                        <button type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold" name="submit">Daftar</button> 
                     </div>
                 </form>
             </div>
