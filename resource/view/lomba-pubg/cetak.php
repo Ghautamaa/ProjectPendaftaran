@@ -16,10 +16,10 @@ $pdf->SetFont('Times','B',11);
 $pdf->Cell(10,7,'No',1,0,'C');
 $pdf->Cell(40,7,'Tim' ,1,0,'C');
 $pdf->Cell(40,7,'Ketua',1,0,'C');
-$pdf->Cell(40,7,'Anggota1',1,0,'C');
-$pdf->Cell(40,7,'Anggota2',1,0,'C');
-$pdf->Cell(40,7,'Anggota3',1,0,'C');
-$pdf->Cell(40,7,'Anggota4',1,0,'C');
+$pdf->Cell(40,7,'Anggota 1',1,0,'C');
+$pdf->Cell(40,7,'Anggota 2',1,0,'C');
+$pdf->Cell(40,7,'Anggota 3',1,0,'C');
+$pdf->Cell(40,7,'Anggota 4',1,0,'C');
 $pdf->Cell(30,7,'Telepon',1,0,'C');
  
 $pdf->Cell(10,7,'',0,1);
