@@ -17,10 +17,12 @@
     <style>
     body {
         background-image: url('../../img/ml_bg.jpg');
+        background-size: cover;
         font-family: 'Montserrat', sans-serif;
     }
     .bg-form{
         background-color: #212a40;
+        opacity: 0.8;
     }
     </style>
   </head>
@@ -70,8 +72,8 @@
                     <input type="hidden" name="user_id" value="1">
                     <!--  -->
                     <div class="mb-1 pt-3">
-                        <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input required type="text" name="tim" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
+                        <label for="team" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <input required type="text" name="team" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
                     </div>
                     <div class="mb-1">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>

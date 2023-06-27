@@ -2,7 +2,7 @@
 include '../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
-    $tim = htmlspecialchars($_POST['tim']);
+    $tim = htmlspecialchars($_POST['team']);
     $ketua = htmlspecialchars($_POST['ketua']);
     $anggota1 = htmlspecialchars($_POST['anggota1']);
     $anggota2 = htmlspecialchars($_POST['anggota2']);

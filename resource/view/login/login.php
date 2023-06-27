@@ -47,19 +47,22 @@ if(isset($_POST['submit'])) {
   align-items: center;
   height: 90vh;
 }
-
+  body{
+    background-image: url('../../img/Artboard1.png');
+    background-size: cover;
+  }
   </style>
 
-  <body style="background-color: #E6F6F5; font-family: 'Montserrat', sans-serif;">
+  <body style="font-family: 'Montserrat', sans-serif;">
     
   <!-- Form  -->  
   <section id="form">
     <div class="container justify-content-center align-content-center">
       <div class=" p-2 m-2 pt-5 text-center fw-bolder">
-          <h2 style="color: #3A506c ;">LOGIN</h2>
+          <h2 style="color: #eff9f9; opacity: 0.9;">LOGIN</h2>
       </div>        
             <div class="d-flex justify-content-center align-items-center w-100">
-            <div class="w-50 p-3 rounded-4 text-white d-flex justify-content-center align-items-center " style="background-color: #212a40;">
+            <div class="w-50 p-3 rounded-4 text-white d-flex justify-content-center align-items-center " style="background-color: #212a40; opacity: 0.8;">
                 <form method="post" class="w-100 p-3">
                     <div class="mb-1 pt-3">
                     <?php
@@ -73,7 +76,7 @@ if(isset($_POST['submit'])) {
                       }
                     ?>
                         <label for="namaTim" class="form-label ms-3 fw-bold">Email</label>
-                        <input type="text" class="form-control rounded-pill" name="email" id="namaTim" placeholder="domain@aasd.asd">
+                        <input type="email" class="form-control rounded-pill" name="email" id="namaTim" placeholder="domain@aasd.asd">
                     </div>
                     <div class="mt-4">
                         <label for=" " class="form-label ms-3 fw-bold">Password</label>
