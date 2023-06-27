@@ -93,7 +93,7 @@
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input required type="text" name="telp" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
                     <a href="tabel-lomba-pubg.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" name="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Daftar</button> 
                     </div>

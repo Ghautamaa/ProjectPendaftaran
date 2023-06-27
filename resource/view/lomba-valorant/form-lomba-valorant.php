@@ -90,7 +90,7 @@ include '../../../backend/connection.php';
                         <label for="noHP" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input type="text" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA" name="telp">
                     </div>   
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
                     <a href="tabel-lomba-valorant.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" class="btn btn-lg btn-danger my-5 px-5 rounded-4 shadow fw-bold" name="submit">Daftar</button> 
                     </div>
