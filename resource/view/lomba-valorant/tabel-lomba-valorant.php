@@ -31,6 +31,7 @@ include '../../../backend/connection.php'
         }
         body {
         background-image: url('../../img/val_bg4.png');
+        background-size: cover;
         }
         
     </style>
@@ -105,7 +106,7 @@ include '../../../backend/connection.php'
                                 echo "<td>".$peserta['telp']."</td>";
                                
                                 echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
-                                echo "<a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
+                                echo "    <a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
                                 echo "</tr>";
                                 $no++;
                             }

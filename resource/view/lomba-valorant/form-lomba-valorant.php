@@ -13,14 +13,15 @@ include '../../../backend/connection.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-<style>
-    body{
-        background-image: url('../../img/val_bg4.png');
-    }
-</style>
-
-  <body style="background-color: #E6F6F5;font-family: 'Montserrat', sans-serif; " >
-    
+    <style>
+        body{
+            background-image: url('../../img/val_bg4.png');
+            background-color: #E6F6F5;
+            font-family: 'Montserrat', sans-serif;
+            background-size:cover;
+        }
+    </style>
+  <body>
   <?php
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
@@ -45,7 +46,6 @@ include '../../../backend/connection.php';
     }
     ?>
   <!-- Form  -->
-  <!-- <div font=""> -->
   <section id="form">
     <div class="container">
         <div class="row justify-content-center">
@@ -56,7 +56,7 @@ include '../../../backend/connection.php';
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40;">
+            <div class="col-md-7 rounded-5 mb-2 text-white px-5" style="background-color: #212a40; opacity: 0.8;">
                 <form action="proses-simpan-valorant.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="1">
@@ -90,7 +90,7 @@ include '../../../backend/connection.php';
                         <label for="noHP" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input type="text" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA" name="telp">
                     </div>   
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
                     <a href="tabel-lomba-valorant.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" class="btn btn-lg btn-danger my-5 px-5 rounded-4 shadow fw-bold" name="submit">Daftar</button> 
                     </div>
