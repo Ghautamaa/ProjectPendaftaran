@@ -78,9 +78,9 @@ $peserta = mysqli_fetch_array($query);
             <div class="col-md-7 rounded-5 mb-2 text-white px-5 bg-form">
                 <form action="proses-edit-ml.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $id ?>">
-                    <div class="mt-4 pt-3">
-                        <label for="team" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input name="team" type="text" value="<?php echo $peserta['tim'] ?>" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
+                    <div class="mb-1 pt-3">
+                        <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <input name="tim" type="text" value="<?php echo $peserta['tim'] ?>" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
                     </div>
                     <div class="mt-4">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>
