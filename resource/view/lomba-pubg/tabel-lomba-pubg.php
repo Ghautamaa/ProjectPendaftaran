@@ -25,6 +25,7 @@
             background-image: url('../../img/pubg.webp');
             background-size:cover;
             background-color: #E6F6F5;
+            font-family: 'Montserrat', sans-serif;
         }
     </style>
   </head>
