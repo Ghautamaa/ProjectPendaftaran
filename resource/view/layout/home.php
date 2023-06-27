@@ -16,6 +16,7 @@
               background-color: rgba(255, 255, 255, 0.);
             }
           </style>
+          
         <!-- Slide Gambar -->
         <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -212,27 +213,6 @@
     <!-- End Jadwal -->
 
 
-    <!-- test -->
-    <div class="container-fluid pt-3">
-      <div class="row ">
-
-            <div class="card" style="width: 18rem;">
-              <img src="../../img/test.png" class="card-img-top">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-        
-        <div class="col-md-7">
-          <h1>Test</h1>
-          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, cum rerum obcaecati quasi tempore sapiente alias suscipit similique inventore eveniet error. Dicta illum suscipit praesentium quos nihil quisquam sint. Unde!</h5>
-        </div>
-
-      </div>
-    </div>
-    <!-- test -->
 
 
 
