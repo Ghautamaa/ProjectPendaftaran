@@ -1,47 +1,4 @@
-<?php
-  @include '../../../backend/connection.php';
 
-  session_start();
-
-  if($_SESSION['admin-page']!="logged"){
-    header('location:../login/login.php');
-  }
-?>
-
-<!doctype html>
-<html lang="en">
-
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <style>
-
-      /* Buat table */
-      .bg-image {
-        background-image: url(../../img/ml.png);
-        background-size: cover;
-        background-position: center;
-      }
-
-      #tb {
-      background-color: rgba(255, 255, 255, 0.50);
-      } 
-  .table1, th, td {
-    border: 1px  #999;
-    padding: 8px 20px;
-    background-color: rgba(255, 255, 255, 0.);
-  }
-    </style>
-
-
-
-<title>Home PNB EC</title>
-</head>
-<body>
   <!-- Nav -->
   <nav class="navbar p-3 mb-2 bg-dark text-white fixed-top">
     <a class="navbar-brand" href="#" style="color : White;">
@@ -78,11 +35,3 @@
       </nav>
       
     <!-- End Nav -->
-
-  <!-- Body -->
-  <?php
-  
-  @include '../layout/home.php'; 
-  ?>
-  </body>
-</html>
