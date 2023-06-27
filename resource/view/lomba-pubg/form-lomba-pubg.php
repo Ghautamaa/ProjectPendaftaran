@@ -9,9 +9,11 @@
         body {
         background-image: url('https://gamebrott.com/wp-content/uploads/2021/03/youtubegaming2560_1440.jpg');
         font-family: 'Montserrat', sans-serif;
+        background-size: cover;
     }
     .bg-form{
         background-color: #212a40;
+        opacity: 0.8;
     }
     </style>
 
@@ -58,7 +60,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
+            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B; opacity: 0.8;">
                 <form action="proses-simpan-pubg.php" method="post">
                     <!-- input id kategori & id user, edit klo gk perlu -->
                     <input type="hidden" name="kategori_id" value="2">

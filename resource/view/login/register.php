@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
   </head>
 
-  <body style="background-color: #E6F6F5; font-family: 'Montserrat', sans-serif;">
+  <body style="background-color: #E6F6F5;  font-family: 'Montserrat', sans-serif;">
   <style>
     #form {
     display: flex;
@@ -55,12 +55,16 @@ if (isset($_POST['submit'])) {
     align-items: center;
     height: 90vh;
   }
+  body{
+    background-image: url('../../img/Artboard1.png');
+    background-size: cover;
+  }
   </style>
   <!-- Form  -->  
   <section id="form">
     <div class="container justify-content-center align-content-center">
             <div class=" p-2 m-2 pt-5 text-center fw-bolder">
-                <h2 style="color: #3A506c ;">REGISTER</h2>
+                <h2 style="color: #3A506c  ; opacity: 0.9;">REGISTER</h2>
                 <?php
                         if(isset($berhasil)){
                           foreach($berhasil as $berhasil){
@@ -73,7 +77,7 @@ if (isset($_POST['submit'])) {
                       ?>
               </div>
             <div class="form-container w-100 d-flex justify-content-center align-items-center" >
-              <div class="w-50 p-3 rounded-4 text-white px-5 justify-content-center align-content-center" style="background-color: #212a40;">
+              <div class="w-50 p-3 rounded-4 text-white px-5 justify-content-center align-content-center" style="background-color: #212a40; opacity: 0.8;">
                 <form action="" method="post" class="W-50">
                     <div class="mb-1 pt-3">
                     <?php

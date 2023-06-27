@@ -1,24 +1,27 @@
 <?php
-include '../backend/config/connection.php';
+include '../../../backend/connection.php';
+session_start();
+// if (!isset($_GET['id']) || $_GET['id'] == null) {
+//     header("Location: tabel-lomba-ml.php");
+// }
 
-if (!isset($_GET['id']) || $_GET['id'] == null) {
-    header("Location: tabel-lomba-ml.php");
-}
+// $id = $_GET['id'];
 
-$id = $_GET['id'];
-
-$sql = "SELECT * FROM tb_peserta_ml WHERE id = $id";
-$query = mysqli_query($db, $sql);
-$peserta = mysqli_fetch_array($query);
-?>
+// $sql = "SELECT * FROM tb_peserta_ml WHERE id = $id";
+// $query = mysqli_query($db, $sql);
+// $peserta = mysqli_fetch_array($query);
+// ?>
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edit Pendaftaran Lomba Mobile Legends</title>
+    <title>EDIT AKUN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
   </head>
 
   <body style="background-color: #E6F6F5;">
@@ -28,7 +31,7 @@ $peserta = mysqli_fetch_array($query);
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-4 p-2 m-2 text-center fw-bolder">
-                <h2 style="color: #3A506B;">EDIT PENDAFTARAN LOMBA MOBILE LEGENDS</h2>
+                <h2 style="color: #3A506B;">EDIT DAFTAR AKUN</h2>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -36,11 +39,11 @@ $peserta = mysqli_fetch_array($query);
                 <form action="proses-edit-ml.php" method="post">
                     <input type="hidden" name="<?php echo $id; ?>">
                     <div class="mb-1 pt-3">
-                        <label for="namaTim" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <label for="namaTim" class="form-label ms-3 fw-bold">Nama</label>
                         <input type="text" value="<?php echo $peserta['namaTim'] ?>" class="form-control rounded-pill" id="namaTim" placeholder="Nama Tim">
                     </div>
                     <div class="mb-1">
-                        <label for="namaKetua" class="form-label ms-3 fw-bold">Nama Ketua</label>
+                        <label for="namaKetua" class="form-label ms-3 fw-bold">Email</label>
                         <input type="text" value="<?php echo $peserta['namaKetua'] ?>" class="form-control rounded-pill" id="namaKetua" placeholder="Nama Ketua">
                     </div>
                     <div class="mb-1">
