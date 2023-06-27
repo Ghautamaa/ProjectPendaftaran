@@ -109,49 +109,47 @@
   <!-- End Syarat -->
   <!-- End Card Valorant -->
 
-  <br>
-  <br>
+  
 
   <!-- Card Mobile Legends -->
-  <div class="container-fluid">
-  <div class="row justify-content-center">
-    <!-- Syarat -->
-      <div class="col-md-7">
-        <h3>Syarat Valorant</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-        </p>
-      </div>
-      <!-- End Syarat -->
-
-    <div class="col-md-3">
-      <div class="card bg-dark" style="width :auto; ">
-        <img src="../../img/valorant.jpg" class="card-img-top">
-        
-        <!-- Teks -->
-        <div class="card-body text-white text-center">
-          <h2 class="card-title">Valorant</h5>
-          <h6 class="card-text">Game FPS 5 ORANG</h6>
-          <a href="../lomba-ml/form-lomba-ml.php" class="btn btn-success text-white">Daftar</a>
-        </div>
-        <!-- End Teks -->
-      
-      </div>
-    </div>
-  </div>
-  </div>
-  <!-- End Card Mobile Legends -->
-
-  <br>
-  <br>
-
-  <!-- Card PUBG-M -->
-  <div class="container-fluid">
+  <div class="container-fluid pt-5">
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/pubg_card.png" class="card-img-top">
+          <img src="../../img/val_bg4.png" class="card-img-top" style="width :auto; ">
+          <!-- Teks -->
+          <div class="card-body text-white text-center">
+            <h2 class="card-title">ML</h5>
+            <h6 class="card-text">Game MOBA 5 ORANG</h6>
+            <a href="#" class="btn btn-success text-white">Daftar</a>
+          </div>
+          <!-- End Teks -->
+        
+        </div>
+      </div>
+    <!-- Syarat -->
+      <div class="col-md-7">
+        <div class="row justify-content-center">
+          <h3>Syarat Mobile Legend</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+              Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+            </p>
+      </div>
+    </div>
+  </div>
+  <!-- End Syarat -->
+  <!-- End Card Mobile Legends -->
+
+
+  <!-- Card PUBG-M -->
+  <div class="container-fluid pt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width :auto; ">
+          <img src="../../img/val_bg4.png" class="card-img-top"style="width :auto; " >
           
           <!-- Teks -->
           <div class="card-body bg-dark text-white text-center">
