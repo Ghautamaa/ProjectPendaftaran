@@ -89,6 +89,7 @@
                         <input required type="text" name="telp" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-end">
+                    <a href="tabel-lomba-valorant.php" class="btn text-white fw-bold my-5 px-5">Tampil Data</button></a>
                         <button type="submit" name="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Daftar</button> 
                     </div>
                 </form>
