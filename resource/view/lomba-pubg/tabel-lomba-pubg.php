@@ -11,11 +11,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
     <style>
+        table {
+            opacity: 0,8;
+        }
+
         .table thead tr th {
             background-color: #0B132B;
             color: white;
         }
         body {
+            background-image: url('../../img/pubg.webp');
+            background-size:cover;
             background-color: #E6F6F5;
         }
     </style>
@@ -53,7 +59,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center py-3">
-                    <h2 style="color: #3A506B;">DAFTAR PESERTA LOMBA PUBG</h2>
+                    <h2 style="color: white;">DAFTAR PESERTA LOMBA PUBG</h2>
                 </div>
             <div class="row">
                 <div class="col-md-12 text-center">
