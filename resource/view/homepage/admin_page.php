@@ -21,7 +21,7 @@
       <a class="nav-link navbar-brand text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="../../img/head.png" width="30" height="30" class="align-items-stretch" style="color: White; padding: -0px; margin: 0" alt="" />
       </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
         <li><a class="dropdown-item" href="../set-admin/form-edit-akun.php">Daftar Akun</a></li>
         <li><hr class="dropdown-divider" /></li>
         <li><a class="dropdown-item" href="#">Daftar Peserta Lomba</a></li>

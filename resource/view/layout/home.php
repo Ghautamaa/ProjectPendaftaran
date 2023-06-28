@@ -8,7 +8,6 @@
   }
 ?>
 
-
 <!doctype html>
 <html lang="en">
 
@@ -42,7 +41,6 @@
   </head>    
   <body>      
       <!-- Kondisi Nav -->
-      
       <?php
         if ($_SESSION['peserta-page'] == 'logged') {
           include "../homepage/peserta_page.php";
@@ -111,7 +109,7 @@
       </h1>
 
   </div>
-  
+
   <!-- Card Valorant -->
   <div class="container-fluid pt-3">
     <div class="row justify-content-center">
