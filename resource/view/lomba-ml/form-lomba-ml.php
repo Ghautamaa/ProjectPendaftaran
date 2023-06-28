@@ -69,7 +69,7 @@
                 <form action="proses-simpan-ml.php" method="post">
                     <!-- input id kategori & id user, user_id belum di set, masi placeholder -->
                     <input type="hidden" name="kategori_id" value="3">
-                    <input type="hidden" name="user_id" value="value=<?php echo $_SESSION['user_id'] ?>">
+                    <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?>">
                     <!--  -->
                     <div class="mt-4 pt-3">
                         <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>

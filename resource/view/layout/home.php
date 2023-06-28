@@ -101,8 +101,9 @@
     </div>
     <!-- End Kolom/Grid welcome -->
 
+
     <!-- Start Card Daftar Lomba-->
-    <div class="container-fluid pt-3">
+    <div class="container-fluid pt-3" id="pendaftaran">
       <div class="col-md-12 text-center pt-5">
         <h5 >#E-SPORT</h5>
         <h1>
@@ -120,7 +121,7 @@
             <div class="card-body text-white text-center">
               <h2 class="card-title">Valorant</h5>
               <h6 class="card-text">Game FPS 5 ORANG</h6>
-              <a href="#" class="btn btn-success text-white">Daftar</a>
+              <a href="../lomba-valorant/form-lomba-valorant.php" class="btn btn-success text-white">Daftar</a>
             </div>
             <!-- End Teks -->
           </div>
@@ -148,7 +149,7 @@
             <div class="card-body text-white text-center">
               <h2 class="card-title">ML</h5>
               <h6 class="card-text">Game MOBA 5 ORANG</h6>
-              <a href="#" class="btn btn-success text-white">Daftar</a>
+              <a href="../lomba-ml/form-lomba-ml.php" class="btn btn-success text-white">Daftar</a>
             </div>
             <!-- End Teks -->
           </div>

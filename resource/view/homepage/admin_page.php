@@ -9,7 +9,7 @@
       <a class="navbar-brand text-white pt-2" href="#">Home</a>
     </li>
     <li class="nav-item">
-      <a class="navbar-brand text-white" href="#">Pendaftaran</a>
+      <a class="navbar-brand text-white" href="#pendaftaran">Pendaftaran</a>
     </li>
     <li class="nav-item">
       <a class="navbar-brand text-white" href="#">About</a>
