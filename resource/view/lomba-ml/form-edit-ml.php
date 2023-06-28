@@ -1,6 +1,7 @@
 <!-- Nav , footer, ikon blum -->
 
 <?php
+session_start();
 include '../../../backend/connection.php';
 
 if (!isset($_GET['id']) || $_GET['id'] == null) {

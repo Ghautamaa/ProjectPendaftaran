@@ -1,7 +1,7 @@
 <!-- Nav , footer, ikon blum -->
-
-
-
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
