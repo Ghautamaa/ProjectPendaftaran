@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   @include '../../../backend/connection.php';
 
   session_start();
@@ -6,7 +6,7 @@
   if(($_SESSION['admin-page']!="logged")&&($_SESSION['peserta-page']!="logged") ){
     header('location:../login/login.php');
   }
-?>
+?> -->
 
 <!doctype html>
 <html lang="en">
@@ -40,45 +40,44 @@
     <title>Home PNB EC</title>
   </head>    
   <body>      
-      <!-- Kondisi Nav -->
-      <?php
-        if ($_SESSION['peserta-page'] == 'logged') {
-          include "../homepage/peserta_page.php";
-        } else {
-          include "../homepage/admin_page.php";
-        }
-      ?>
-       <!-- end kondisi nav -->
+    <!-- Kondisi Nav -->
+    <!-- <?php
+      if ($_SESSION['peserta-page'] == 'logged') {
+        include "../homepage/peserta_page.php";
+      } else {
+        include "../homepage/admin_page.php";
+      }
+    ?> -->
+    <!-- end kondisi nav -->
 
-        <!-- Slide Gambar -->
-        <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../../img/ml.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/valorant.jpg" class="d-block w-100" >
-          </div>
-          <div class="carousel-item">
-            <img src="../../img/pubg.webp" class="d-block w-100">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!-- Slide Gambar -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-          <!-- End Slide Gambar -->
-
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../img/ml.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/valorant.jpg" class="d-block w-100" >
+        </div>
+        <div class="carousel-item">
+          <img src="../../img/pubg.webp" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End Slide Gambar -->
 
     <!-- Start Kolom/Grid Welcome -->
     <div class="container-fluid pt-5">
@@ -88,9 +87,11 @@
           <h1>Apa Itu PNB EC ?</h1>
           <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, nihil modi fuga porro nam id quaerat sint, aliquid labore ipsam unde omnis! Quisquam et, cum provident aut impedit inventore voluptas.</h4>
           <h4>
-            <li>Ayam Goreng</li>
-            <li>Sate Babi</li>
-            <li>Rumah</li>
+            <ul>
+              <li>Ayam Goreng</li>
+              <li>Sate Babi</li>
+              <li>Rumah</li>
+            </ul>
           </h4>
         </div>
         <div class="col-md-5 text-center">
@@ -100,15 +101,14 @@
     </div>
     <!-- End Kolom/Grid welcome -->
 
-  <!-- Start Card Daftar Lomba-->
-  <div class="col-md-12 text-center pt-5">
+    <!-- Start Card Daftar Lomba-->
+    <div class="col-md-12 text-center pt-5">
       <h5 >#E-SPORT</h5>
       <h1>
-          <span style="color: black;">E-SPORT</span>
-          <span style="color: #5BC0BE;">PNB EC</span>
+        <span style="color: black;">E-SPORT</span>
+        <span style="color: #5BC0BE;">PNB EC</span>
       </h1>
-
-  </div>
+    </div>
 
   <!-- Card Valorant -->
   <div class="container-fluid pt-3">
@@ -123,26 +123,22 @@
             <a href="#" class="btn btn-success text-white">Daftar</a>
           </div>
           <!-- End Teks -->
-        
         </div>
       </div>
-    <!-- Syarat -->
+      <!-- Syarat -->
       <div class="col-md-7">
-        <div class="row justify-content-center">
-          <h3>Syarat Valorant</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-              Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-            </p>
+        <h3>Syarat Valorant</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+        </p>
       </div>
     </div>
   </div>
   <!-- End Syarat -->
   <!-- End Card Valorant -->
-
-  
 
   <!-- Card Mobile Legends -->
   <div class="container-fluid pt-5">
@@ -157,33 +153,29 @@
             <a href="#" class="btn btn-success text-white">Daftar</a>
           </div>
           <!-- End Teks -->
-        
         </div>
       </div>
-    <!-- Syarat -->
+      <!-- Syarat -->
       <div class="col-md-7">
-        <div class="row justify-content-center">
-          <h3>Syarat Mobile Legend</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-              Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-            </p>
+        <h3>Syarat Mobile Legend</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+        </p>
       </div>
     </div>
   </div>
   <!-- End Syarat -->
   <!-- End Card Mobile Legends -->
 
-
   <!-- Card PUBG-M -->
   <div class="container-fluid pt-5">
     <div class="row justify-content-center">
       <div class="col-md-3">
         <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/val_bg4.png" class="card-img-top"style="width :auto; " >
-          
+          <img src="../../img/val_bg4.png" class="card-img-top"style="width :auto; " >    
           <!-- Teks -->
           <div class="card-body bg-dark text-white text-center">
             <h2 class="card-title">PUBG-MOBILE</h5>
@@ -191,10 +183,9 @@
             <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
           </div>
           <!-- End Teks -->
-        
         </div>
       </div>
-    <!-- Syarat -->
+      <!-- Syarat -->
       <div class="col-md-7">
         <h3>Syarat PUBG-MOBILE</h3>
         <p>
@@ -206,6 +197,7 @@
   </div>
   <!-- End Syarat -->
   <!-- End Card PUBG-M -->
+  
 </div>
 <!-- End Card Daftar Lomba -->
 
