@@ -108,7 +108,8 @@
                             ?>
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between">
+                        <a href="cetak.php" class="btn btn-primary fw-bold mb-3">Cetak</a>
                         <a href="form-lomba-ml.php" class="btn btn-primary fw-bold mb-3">Tambah data</a>
                     </div>
                 </div>
