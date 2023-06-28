@@ -21,6 +21,9 @@ include '../../../backend/connection.php';
 </style>
 
   <body style="background-color: #E6F6F5;font-family: 'Montserrat', sans-serif; " >
+  <?php
+  include '../homepage/peserta_page.php';
+  ?>
     
   <?php
     if (isset ($_GET['status'])) {

@@ -23,8 +23,6 @@
 </head>
 
   <body>
-    
-
     <!-- PHP untuk menampilkan status pendaftaran -->
     <?php
     if (isset ($_GET['status'])) {
