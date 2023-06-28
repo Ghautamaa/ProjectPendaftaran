@@ -1,22 +1,57 @@
+<?php
+  @include '../../../backend/connection.php';
 
-      <style>
-            /* Buat table */
-            .bg-image {
-              background-image: url(../../img/ml.png);
-              background-size: cover;
-              background-position: center;
-            }
+  session_start();
 
-            #tb {
-            background-color: rgba(255, 255, 255, 0.50);
-            } 
-            .table1, th, td {
-              border: 1px  #999;
-              padding: 8px 20px;
-              background-color: rgba(255, 255, 255, 0.);
-            }
-          </style>
-          
+  if(($_SESSION['admin-page']!="logged")&&($_SESSION['peserta-page']!="logged") ){
+    header('location:../login/login.php');
+  }
+?>
+
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+
+      /* Buat table */
+      .bg-image {
+        background-image: url(../../img/ml.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      #tb {
+        background-color: rgba(255, 255, 255, 0.50);
+      } 
+      .table1, th, td {
+        border: 1px  #999;
+        padding: 8px 20px;
+        background-color: rgba(255, 255, 255, 0.);
+      }
+
+    </style>
+    <title>Home PNB EC</title>
+  </head>    
+  <body>      
+      <!-- Kondisi Nav -->
+      
+      <?php
+        if ($_SESSION['peserta-page'] == 'logged') {
+          include "../homepage/peserta_page.php";
+        } else {
+          include "../homepage/admin_page.php";
+        }
+      ?>
+       <!-- end kondisi nav -->
+
         <!-- Slide Gambar -->
         <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -218,3 +253,6 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+</body>
+</html>

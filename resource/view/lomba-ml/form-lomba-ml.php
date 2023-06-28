@@ -71,31 +71,31 @@
                     <input type="hidden" name="kategori_id" value="3">
                     <input type="hidden" name="user_id" value="1">
                     <!--  -->
-                    <div class="mb-1 pt-3">
-                        <label for="team" class="form-label ms-3 fw-bold">Nama Tim</label>
-                        <input required type="text" name="team" class="form-control rounded-pill" id="team" placeholder="Nama Tim">
+                    <div class="mt-4 pt-3">
+                        <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
+                        <input required type="text" name="tim" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="ketua" class="form-label ms-3 fw-bold">Nama Ketua</label>
                         <input required type="text" name="ketua" class="form-control rounded-pill" id="ketua" placeholder="Nama Ketua">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota1" class="form-label ms-3 fw-bold">Nama Anggota 1</label>
                         <input required type="text" name="anggota1" class="form-control rounded-pill" id="anggota1" placeholder="Nama Anggota 1">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota2" class="form-label ms-3 fw-bold">Nama Anggota 2</label>
                         <input required type="text" name="anggota2" class="form-control rounded-pill" id="anggota2" placeholder="Nama Anggota 2">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
                         <input required type="text" name="anggota3" class="form-control rounded-pill" id="anggota3" placeholder="Nama Anggota 3">
                     </div>
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="anggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
                         <input required type="text" name="anggota4" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
                     </div>   
-                    <div class="mb-1">
+                    <div class="mt-4">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input required type="text" name="telp" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
