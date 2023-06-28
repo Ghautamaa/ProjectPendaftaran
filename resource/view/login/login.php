@@ -11,7 +11,7 @@ if(isset($_POST['submit'])) {
     if (mysqli_num_rows($result) > 0) {
         $take = mysqli_fetch_array($result);                                                                                    
         $level = $take['level'];
-
+        $_SESSION['user_id'] = $take['id'];
             if ($level == 'admin') {
                 $_SESSION['admin-page'] = 'logged';
                 $_SESSION['role'] = 'admin';

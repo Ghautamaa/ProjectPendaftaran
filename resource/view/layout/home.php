@@ -41,13 +41,13 @@
   </head>    
   <body>      
     <!-- Kondisi Nav -->
-    <!-- <?php
+    <?php
       if ($_SESSION['peserta-page'] == 'logged') {
         include "../homepage/peserta_page.php";
       } else {
         include "../homepage/admin_page.php";
       }
-    ?> -->
+    ?>
     <!-- end kondisi nav -->
 
     <!-- Slide Gambar -->
