@@ -102,104 +102,98 @@
     <!-- End Kolom/Grid welcome -->
 
     <!-- Start Card Daftar Lomba-->
-    <div class="col-md-12 text-center pt-5">
-      <h5 >#E-SPORT</h5>
-      <h1>
-        <span style="color: black;">E-SPORT</span>
-        <span style="color: #5BC0BE;">PNB EC</span>
-      </h1>
-    </div>
+    <div class="container-fluid pt-3">
+      <div class="col-md-12 text-center pt-5">
+        <h5 >#E-SPORT</h5>
+        <h1>
+          <span style="color: black;">E-SPORT</span>
+          <span style="color: #5BC0BE;">PNB EC</span>
+        </h1>
+      </div>
 
-  <!-- Card Valorant -->
-  <div class="container-fluid pt-3">
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/val_bg4.png" class="card-img-top">
-          <!-- Teks -->
-          <div class="card-body text-white text-center">
-            <h2 class="card-title">Valorant</h5>
-            <h6 class="card-text">Game FPS 5 ORANG</h6>
-            <a href="#" class="btn btn-success text-white">Daftar</a>
+      <!-- Card Valorant -->
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-3">
+          <div class="card bg-dark" style="width :auto; ">
+            <img src="../../img/val_bg4.png" class="card-img-top">
+            <!-- Teks -->
+            <div class="card-body text-white text-center">
+              <h2 class="card-title">Valorant</h5>
+              <h6 class="card-text">Game FPS 5 ORANG</h6>
+              <a href="#" class="btn btn-success text-white">Daftar</a>
+            </div>
+            <!-- End Teks -->
           </div>
-          <!-- End Teks -->
+        </div>
+        <!-- Syarat -->
+        <div class="col-md-7">
+          <h3>Syarat Valorant</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+            Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+          </p>
         </div>
       </div>
-      <!-- Syarat -->
-      <div class="col-md-7">
-        <h3>Syarat Valorant</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End Syarat -->
-  <!-- End Card Valorant -->
+      <!-- End Syarat -->
+      <!-- End Card Valorant -->
 
-  <!-- Card Mobile Legends -->
-  <div class="container-fluid pt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/val_bg4.png" class="card-img-top" style="width :auto; ">
-          <!-- Teks -->
-          <div class="card-body text-white text-center">
-            <h2 class="card-title">ML</h5>
-            <h6 class="card-text">Game MOBA 5 ORANG</h6>
-            <a href="#" class="btn btn-success text-white">Daftar</a>
+      <!-- Card Mobile Legends -->
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-3">
+          <div class="card bg-dark" style="width :auto; ">
+            <img src="../../img/val_bg4.png" class="card-img-top" style="width :auto; ">
+            <!-- Teks -->
+            <div class="card-body text-white text-center">
+              <h2 class="card-title">ML</h5>
+              <h6 class="card-text">Game MOBA 5 ORANG</h6>
+              <a href="#" class="btn btn-success text-white">Daftar</a>
+            </div>
+            <!-- End Teks -->
           </div>
-          <!-- End Teks -->
+        </div>
+        <!-- Syarat -->
+        <div class="col-md-7">
+          <h3>Syarat Mobile Legend</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+            Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
+          </p>
         </div>
       </div>
-      <!-- Syarat -->
-      <div class="col-md-7">
-        <h3>Syarat Mobile Legend</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio iusto nemo tenetur culpa hic quisquam similique possimus dolorum ab, laudantium adipisci deleniti soluta totam accusantium voluptatem necessitatibus impedit veniam!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quae reiciendis ab, consequatur fuga nihil hic ullam repudiandae amet dolorum soluta animi praesentium, repellendus dolores eaque, nesciunt saepe molestias iure?
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End Syarat -->
-  <!-- End Card Mobile Legends -->
+      <!-- End Syarat -->
+      <!-- End Card Mobile Legends -->
 
-  <!-- Card PUBG-M -->
-  <div class="container-fluid pt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <div class="card bg-dark" style="width :auto; ">
-          <img src="../../img/val_bg4.png" class="card-img-top"style="width :auto; " >    
-          <!-- Teks -->
-          <div class="card-body bg-dark text-white text-center">
-            <h2 class="card-title">PUBG-MOBILE</h5>
-            <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
-            <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
+      <!-- Card PUBG-M -->
+      <div class="row justify-content-center pt-5">
+        <div class="col-md-3">
+          <div class="card bg-dark" style="width :auto; ">
+            <img src="../../img/val_bg4.png" class="card-img-top"style="width :auto; " >    
+            <!-- Teks -->
+            <div class="card-body bg-dark text-white text-center">
+              <h2 class="card-title">PUBG-MOBILE</h5>
+              <h6 class="card-text">Game BATTLE ROYALE 4 ORANG</h6>
+              <a href="../lomba-pubg/form-lomba-pubg.php" class="btn btn-success text-white">Daftar</a>
+            </div>
+            <!-- End Teks -->
           </div>
-          <!-- End Teks -->
+        </div>
+        <!-- Syarat -->
+        <div class="col-md-7">
+          <h3>Syarat PUBG-MOBILE</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
+            Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
+          </p>
         </div>
       </div>
-      <!-- Syarat -->
-      <div class="col-md-7">
-        <h3>Syarat PUBG-MOBILE</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae animi provident beatae aliquid inventore?
-          Aliquam aperiam nihil iste voluptatem, similique a doloremque, iure deserunt vero dolorum voluptatum ad dignissimos atque?
-        </p>
-      </div>
+      <!-- End Syarat -->
+      <!-- End Card PUBG-M -->
     </div>
-  </div>
-  <!-- End Syarat -->
-  <!-- End Card PUBG-M -->
-  
-</div>
-<!-- End Card Daftar Lomba -->
+    <!-- End Card Daftar Lomba -->
 
     <!-- Jadwal Lomba -->
     <div class="container-fluid">
