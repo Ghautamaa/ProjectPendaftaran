@@ -1,16 +1,16 @@
 <?php
 include '../../../backend/connection.php';
 session_start();
-// if (!isset($_GET['id']) || $_GET['id'] == null) {
-//     header("Location: tabel-lomba-ml.php");
-// }
+if (!isset($_GET['id']) || $_GET['id'] == null) {
+    header("Location: tabel-edit-akun.php");
+}
 
-// $id = $_GET['id'];
+$id = $_GET['id'];
 
-// $sql = "SELECT * FROM tb_peserta_ml WHERE id = $id";
-// $query = mysqli_query($db, $sql);
-// $peserta = mysqli_fetch_array($query);
-// ?>
+$sql = "SELECT * FROM tb_user WHERE id = $id";
+$query = mysqli_query($db, $sql);
+$akun = mysqli_fetch_array($query);
+?>
 
 <!doctype html>
 <html lang="en">
@@ -35,39 +35,26 @@ session_start();
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B;">
-                <form action="proses-edit-ml.php" method="post">
-                    <input type="hidden" name="<?php echo $id; ?>">
+            <div class="col-md-8 rounded-5 mb-2 text-white px-5" style="background-color: #0B132B;">
+                <form action="proses-edit-akun.php" method="post">
+                    <input name="id" type="hidden" value="<?php echo $id; ?>">
                     <div class="mb-1 pt-3">
-                        <label for="namaTim" class="form-label ms-3 fw-bold">Nama</label>
-                        <input type="text" value="<?php echo $peserta['namaTim'] ?>" class="form-control rounded-pill" id="namaTim" placeholder="Nama Tim">
+                        <label for="nama" class="form-label ms-3 fw-bold">Nama</label>
+                        <input name="nama" type="text" value="<?php echo $akun['nama'] ?>" class="form-control rounded-pill" id="email" placeholder="Nama">
                     </div>
                     <div class="mb-1">
-                        <label for="namaKetua" class="form-label ms-3 fw-bold">Email</label>
-                        <input type="text" value="<?php echo $peserta['namaKetua'] ?>" class="form-control rounded-pill" id="namaKetua" placeholder="Nama Ketua">
-                    </div>
-                    <div class="mb-1">
-                        <label for="namaAnggota1" class="form-label ms-3 fw-bold">Nama Anggota 1</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota1'] ?>" class="form-control rounded-pill" id="namaAnggota1" placeholder="Nama Anggota 1">
-                    </div>
-                    <div class="mb-1">
-                        <label for="namaAnggota2" class="form-label ms-3 fw-bold">Nama Anggota 2</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota2'] ?>" class="form-control rounded-pill" id="namaAnggota2" placeholder="Nama Anggota 2">
-                    </div>
-                    <div class="mb-1">
-                        <label for="namaAnggota3" class="form-label ms-3 fw-bold">Nama Anggota 3</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota3'] ?>" class="form-control rounded-pill" id="namaAnggota3" placeholder="Nama Anggota 3">
-                    </div>
-                    <div class="mb-1">
-                        <label for="namaAnggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
-                        <input type="text" value="<?php echo $peserta['namaAnggota4'] ?>" class="form-control rounded-pill" id="namaAnggota4" placeholder="Nama Anggota 4">
+                        <label for="email" class="form-label ms-3 fw-bold">Email</label>
+                        <input name="email" type="text" value="<?php echo $akun['email'] ?>" class="form-control rounded-pill" id="nama" placeholder="Email">
                     </div>   
                     <div class="mb-1">
-                        <label for="noHP" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
-                        <input type="text" value="<?php echo $peserta['noHP'] ?>" class="form-control rounded-pill" id="noHP" placeholder="No. Telepon/WA">
-                    </div>   
+                        <label for="level" class="form-label ms-3 fw-bold">Level</label>
+                        <select class="form-select rounded-pill" aria-label="Default select example" name="level" id="level" >
+                            <option value="admin">Admin</option>
+                            <option value="peserta">Peserta</option>
+                        </select>
+                    </div>  
                     <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
+                        <button type="submit" name="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>
             </div>

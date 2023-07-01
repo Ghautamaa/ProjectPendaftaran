@@ -11,16 +11,16 @@ if(isset($_POST['submit'])) {
     if (mysqli_num_rows($result) > 0) {
         $take = mysqli_fetch_array($result);                                                                                    
         $level = $take['level'];
-
+        $_SESSION['user_id'] = $take['id'];
             if ($level == 'admin') {
                 $_SESSION['admin-page'] = 'logged';
                 $_SESSION['role'] = 'admin';
-                header('Location: ../homepage/admin_page.php');
+                header('Location: ../layout/home.php');
                 exit();
             } elseif($level == 'peserta') {
                 $_SESSION['peserta-page'] = 'logged';
                 $_SESSION['role'] = 'peserta';
-                header('Location: ../homepage/peserta_page.php');
+                header('Location: ../layout/home.php');
                 exit();
             }
     } else {

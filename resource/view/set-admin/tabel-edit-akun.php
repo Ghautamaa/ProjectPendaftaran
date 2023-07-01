@@ -8,7 +8,8 @@
 <!-- blum ad database, blum di test -->
 
 <?php 
-include '../../../backend/connection.php'
+include '../../../backend/connection.php';
+session_start();
 ?>
 
 <!doctype html>
@@ -30,7 +31,8 @@ include '../../../backend/connection.php'
             background-color: #E6F6F5;
         }
         body {
-        background-image: url('../../img/val_bg4.png');
+        background-image: url('../../img/Artboard1.png');
+        background-size: cover;
         }
         
     </style>
@@ -61,22 +63,23 @@ include '../../../backend/connection.php'
         echo "</div>";
     }
     ?>
-
+    
     <!-- Tabel lomba ml  -->
     <section id="tabel">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center py-3">
-                    <h2 style="color: #FFF4F4;">DAFTAR PESERTA LOMBA VALORANT</h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 text-center py-3 mt-5">
+                    <h2 style="color: #FFF4F4;">DAFTAR AKUN</h2>
                 </div>
-                <div class="col-md-12 rounded-5 mb-2 text-center">
-                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
-                        <thead>
+                <div class="col-md-12 rounded-5 mb-2">
+                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
+                        <thead >
                             <tr>
-                                <th>No</th>
+                                <th class="text-center">No</th>
                                 <th>Nama</th>
                                 <th>Email</th>
-                                <th>Aksi</th>
+                                <th>level</th>
+                                <th class="text-center">Aksi</th>
                             </tr>
                         </thead>
                         <!-- placeholder -->
@@ -84,23 +87,18 @@ include '../../../backend/connection.php'
                             <?php
                             
                             $sql = "SELECT *
-                                    FROM tb_peserta 
-                                    WHERE kategori_id = 1";
+                                    FROM tb_user";
                             $query = mysqli_query($db, $sql);
                             $no = 1;
-                            while ($peserta = mysqli_fetch_array($query)) {
+                            while ($akun = mysqli_fetch_array($query)) {
                                 echo "<tr>";
-                                echo "<td>".$no."</td>";
-                                echo "<td>".$peserta['tim']."</td>";
-                                echo "<td>".$peserta['ketua']."</td>";
-                                echo "<td>".$peserta['anggota1']."</td>";
-                                echo "<td>".$peserta['anggota2']."</td>";
-                                echo "<td>".$peserta['anggota3']."</td>";
-                                echo "<td>".$peserta['anggota4']."</td>";
-                                echo "<td>".$peserta['telp']."</td>";
+                                echo "<td class='text-center'>".$no."</td>";
+                                echo "<td>".$akun['nama']."</td>";
+                                echo "<td>".$akun['email']."</td>";
+                                echo "<td>".$akun['level']."</td>";
                                
-                                echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
-                                echo "<a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
+                                echo "<td class='text-center'><a href='form-edit-akun.php?id=".$akun['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |     ";
+                                echo "<a href='proses-hapus-akun.php?id=".$akun['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
                                 echo "</tr>";
                                 $no++;
                             }
@@ -110,8 +108,8 @@ include '../../../backend/connection.php'
                         </tbody>
                     </table>
                     <div class="d-flex justify-content-end">
-                            <a href="form-lomba-valorant.php">
-                                <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
+                            <a href="form-tambah-akun.php">
+                                <button class="btn btn-primary opacity-75 fw-bold mb-3">Tambah data</button>
                             </a>
                     </div>
                 </div>
