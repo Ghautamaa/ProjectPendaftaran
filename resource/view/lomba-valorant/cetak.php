@@ -26,7 +26,7 @@ $pdf->Cell(10,7,'',0,1);
 
 $pdf->SetFont('Times', '', 10);
 $no = 1;
-$data = mysqli_query($db, "SELECT * FROM tb_peserta WHERE kategori_id=3");
+$data = mysqli_query($db, "SELECT * FROM tb_peserta WHERE kategori_id=1");
 while ($d = mysqli_fetch_array($data)) {
   $pdf->Cell(10, 6, $no++, 1, 0, 'C');
   $pdf->Cell(40, 6, $d['tim'], 1, 0, 'C');
