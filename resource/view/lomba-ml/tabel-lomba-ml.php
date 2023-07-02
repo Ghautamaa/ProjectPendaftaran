@@ -69,7 +69,7 @@
             <!-- tabel -->
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
+                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
                         <thead>
                             <tr>
                                 <th>No</th>
