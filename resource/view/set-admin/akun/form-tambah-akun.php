@@ -1,5 +1,5 @@
 <?php
-include '../../../backend/connection.php';
+include '../../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
 
@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
     height: 90vh;
   }
   body{
-    background-image: url('../../img/Artboard1.png');
+    background-image: url('../../../img/Artboard1.png');
     background-size: cover;
   }
   </style>
@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
   <section id="form">
     <div class="container justify-content-center align-content-center">
             <div class=" p-2 m-2 pt-5 text-center fw-bolder">
-                <h2 style="color: #3A506c  ; opacity: 0.9;">REGISTER</h2>
+                <h2 style="color: #FFF4F4  ; opacity: 0.9;">TAMBAH AKUN</h2>
                 <?php
                         if(isset($berhasil)){
                           foreach($berhasil as $berhasil){
@@ -110,7 +110,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="mb-1 pt-3">
                           <label for="password" class="form-label ms-3">Password</label>
-                          <input type="password" class="form-control rounded-4" id="password" placeholder="**********" name="password">
+                          <input type="password" class="form-control rounded-4" id="password" placeholder="●●●●●●●●●●" name="password">
                     </div>
                     <div class="mb-1 pt-3">
                           <?php
@@ -124,7 +124,7 @@ if (isset($_POST['submit'])) {
                               }     
                           ?>
                           <label for="kpassword" class="form-label ms-3">Konfirmasi Password</label>
-                          <input type="password" class="form-control rounded-4" id="kpassword" placeholder="**********" name="kpassword">
+                          <input type="password" class="form-control rounded-4" id="kpassword" placeholder="●●●●●●●●●●" name="kpassword">
                     </div>
                     <div class="d-flex justify-content-between ms-1 my-4 pt-4">
                         <a style="text-decoration: underline; color: #ffff; font-size: 14px;" class="color mt-3" href="tabel-edit-akun.php">Kembali</a>
