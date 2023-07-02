@@ -1,6 +1,6 @@
 <?php
 
-include '../../../backend/connection.php';
+include '../../../../backend/connection.php';
 
 $id = $_GET['id'];
 

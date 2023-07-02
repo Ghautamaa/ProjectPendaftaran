@@ -8,7 +8,7 @@
 <!-- blum ad database, blum di test -->
 
 <?php 
-include '../../../backend/connection.php';
+include '../../../../backend/connection.php';
 session_start();
 ?>
 
@@ -31,7 +31,7 @@ session_start();
             background-color: #E6F6F5;
         }
         body {
-        background-image: url('../../img/Artboard1.png');
+        background-image: url('../../../img/Artboard1.png');
         background-size: cover;
         }
         
@@ -39,37 +39,42 @@ session_start();
   </head>
 
   <body style =" font-family: 'Montserrat', sans-serif;">
+  <!-- Nav -->
+  <nav class="navbar p-3 mb-2 bg-transparent text-white fixed-top ">
+    <a class="navbar-brand" href="#" style="color : White;">
+      <img src="https://stickershop.line-scdn.net/stickershop/v1/product/9738038/LINEStorePC/main.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      PNB EC
+    </a>
+    <ul class="nav ml-auto">
+      <li class="nav-item dropdown d-flex align-items-center justify-content-center mt-1">
+          <a class="nav-link  navbar-brand text-white d-flex align-items-center justify-content-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Admin<!-- <img src="../../../img/head.png" width="30" height="30" class="align-items-stretch" style="color: White;" alt=""> -->
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="tabel-edit-akun.php">Daftar Akun</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../peserta/tabel-edit-peserta.php">Daftar Peserta Lomba</a></li>
+          </ul>
+      </li>
+      <li class="nav-item d-flex align-items-center justify-content-center">
+        <a class="navbar-brand text-white pt-2" href="../../layout/home.php">Home</a>
+      </li>
+          <li class="nav-item d-flex align-items-center justify-content-center">
+            <a class="navbar-brand text-white" href="../../login/logout.php"><button class="btn btn btn-danger rounded-pill px-4 pb-2">Log out</button></a>
+          </li>
+          
+        </ul>
+        
+      </nav>
+      
+    <!-- End Nav -->
 
-  <?php
-    if (isset ($_GET['status'])) {
-        $status = $_GET['status'];
-
-        echo "<div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-8 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "sukses") {
-            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        } else {
-            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        }
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div>";
-    }
-    ?>
-    
-    <!-- Tabel lomba ml  -->
+    <!-- Tabel akun -->
     <section id="tabel">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-8 text-center py-3 mt-5">
-                    <h2 style="color: #FFF4F4;">DAFTAR AKUN</h2>
+                    <h2 style="color: #FFF4F4; opacity: 0.9;">DAFTAR AKUN</h2>
                 </div>
                 <div class="col-md-12 rounded-5 mb-2">
                     <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
@@ -87,7 +92,8 @@ session_start();
                             <?php
                             
                             $sql = "SELECT *
-                                    FROM tb_user";
+                                    FROM tb_user
+                                    WHERE id != 1";
                             $query = mysqli_query($db, $sql);
                             $no = 1;
                             while ($akun = mysqli_fetch_array($query)) {
@@ -107,16 +113,23 @@ session_start();
                             
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-end">
-                            <a href="form-tambah-akun.php">
-                                <button class="btn btn-primary opacity-75 fw-bold mb-3">Tambah data</button>
-                            </a>
+                    <div class="d-flex justify-content-between">
+                            <div>
+                                <a href="cetak.php">
+                                    <button class="btn btn-primary opacity-75 fw-bold mb-3">cetak</button>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="form-tambah-akun.php">
+                                    <button class="btn btn-primary opacity-75 fw-bold mb-3">Tambah data</button>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Tabel lomba ml end -->
+    <!-- Tabel akun end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

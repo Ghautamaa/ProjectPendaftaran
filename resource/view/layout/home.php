@@ -6,7 +6,7 @@
   if(($_SESSION['admin-page']!="logged")&&($_SESSION['peserta-page']!="logged") ){
     header('location:../login/login.php');
   }
-?> -->
+?> --> 
 
 <!doctype html>
 <html lang="en">
@@ -15,7 +15,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
@@ -39,10 +41,10 @@
     </style>
     <title>Home PNB EC</title>
   </head>    
-  <body>      
+  <body style =" font-family: 'Montserrat', sans-serif;">      
     <!-- Kondisi Nav -->
     <?php
-      if ($_SESSION['peserta-page'] == 'logged') {
+      if($_SESSION['peserta-page'] == 'logged') {
         include "../homepage/peserta_page.php";
       } else {
         include "../homepage/admin_page.php";
@@ -120,7 +122,7 @@
             <div class="card-body text-white text-center">
               <h2 class="card-title">Valorant</h5>
               <h6 class="card-text">Game FPS 5 ORANG</h6>
-              <a href="#" class="btn btn-success text-white">Daftar</a>
+              <a href="../lomba-valorant/form-lomba-valorant.php" class="btn btn-success text-white">Daftar</a>
             </div>
             <!-- End Teks -->
           </div>
@@ -148,7 +150,7 @@
             <div class="card-body text-white text-center">
               <h2 class="card-title">ML</h5>
               <h6 class="card-text">Game MOBA 5 ORANG</h6>
-              <a href="#" class="btn btn-success text-white">Daftar</a>
+              <a href="../lomba-ml/form-lomba-ml.php" class="btn btn-success text-white">Daftar</a>
             </div>
             <!-- End Teks -->
           </div>

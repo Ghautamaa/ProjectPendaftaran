@@ -80,7 +80,7 @@ if(isset($_POST['submit'])) {
                     </div>
                     <div class="mt-4">
                         <label for=" " class="form-label ms-3 fw-bold">Password</label>
-                        <input type="password" class="form-control rounded-4 align-content-center" name="password" id="password" placeholder="*******">
+                        <input type="password" class="form-control rounded-4 align-content-center" name="password" id="password" placeholder="●●●●●●●●●●">
                     <div class="d-flex justify-content-between ms-1 my-4 pt-4">
                         <a style="text-decoration: underline; color: #ffff; font-size: 14px;" class="color mt-3" href="register.php">Belum Punya Akun?</a>
                         <button type="submit" name="submit"  class="btn btn-lg btn-success rounded-4 shadow fw-bold">LOGIN</button> 
