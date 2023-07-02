@@ -13,15 +13,15 @@ include '../../../backend/connection.php';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
-    <style>
-        body{
-            background-image: url('../../img/val_bg4.png');
-            background-color: #E6F6F5;
-            font-family: 'Montserrat', sans-serif;
-            background-size:cover;
-        }
-    </style>
-  <body>
+<style>
+    body{
+        background-image: url('../../img/val_bg4.png');
+        background-size: cover;
+    }
+</style>
+
+  <body style="background-color: #E6F6F5;font-family: 'Montserrat', sans-serif; " >
+    
   <?php
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
