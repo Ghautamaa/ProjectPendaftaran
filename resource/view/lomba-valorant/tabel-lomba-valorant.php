@@ -115,8 +115,11 @@ include '../../../backend/connection.php'
                             
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-end">
-                            <a href="form-lomba-valorant.php">
+                    <div class="d-flex justify-content-between">
+                            <a href="cetak.php">
+                                <button class="btn btn-primary fw-bold mb-3">Cetak</button>
+                            </a>
+                            <a href="form-lomba-valorant.php" >
                                 <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
                             </a>
                     </div>
