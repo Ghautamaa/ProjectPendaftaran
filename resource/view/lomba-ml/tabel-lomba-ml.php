@@ -25,6 +25,7 @@
         }
         body {
             background-image: url('../../img/ml_bg.jpg');
+            background-size: cover;
             font-family: 'Montserrat', sans-serif;
         }
     </style>
@@ -70,49 +71,51 @@
             <!-- tabel -->
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Tim</th>
-                                <th>Nama Ketua</th>
-                                <th>Nama Anggota 1</th>
-                                <th>Nama Anggota 2</th>
-                                <th>Nama Anggota 3</th>
-                                <th>Nama Anggota 4</th>
-                                <th>No HP</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                            $sql = "SELECT *
-                                    FROM tb_peserta 
-                                    WHERE kategori_id = 3";
-                            $query = mysqli_query($db, $sql);
-                            $no = 1;
-                            while ($peserta = mysqli_fetch_assoc($query)) {
-                                echo "<tr>";
-                                echo "<td class='fw-bold'>".$no."</td>";
-                                echo "<td>".$peserta['tim']."</td>";
-                                echo "<td>".$peserta['ketua']."</td>";
-                                echo "<td>".$peserta['anggota1']."</td>";
-                                echo "<td>".$peserta['anggota2']."</td>";
-                                echo "<td>".$peserta['anggota3']."</td>";
-                                echo "<td>".$peserta['anggota4']."</td>";
-                                echo "<td>".$peserta['telp']."</td>";
-                                echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
-                                echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
-                                echo "</tr>";
-                                $no++;
-                            }
-                            ?>
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-between">
-                        <a href="cetak.php" class="btn btn-primary fw-bold mb-3">Cetak</a>
-                        <a href="form-lomba-ml.php" class="btn btn-primary fw-bold mb-3">Tambah data</a>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Tim</th>
+                                    <th>Nama Ketua</th>
+                                    <th>Nama Anggota 1</th>
+                                    <th>Nama Anggota 2</th>
+                                    <th>Nama Anggota 3</th>
+                                    <th>Nama Anggota 4</th>
+                                    <th>No HP</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $sql = "SELECT *
+                                        FROM tb_peserta 
+                                        WHERE kategori_id = 3";
+                                $query = mysqli_query($db, $sql);
+                                $no = 1;
+                                while ($peserta = mysqli_fetch_assoc($query)) {
+                                    echo "<tr>";
+                                    echo "<td class='fw-bold'>".$no."</td>";
+                                    echo "<td>".$peserta['tim']."</td>";
+                                    echo "<td>".$peserta['ketua']."</td>";
+                                    echo "<td>".$peserta['anggota1']."</td>";
+                                    echo "<td>".$peserta['anggota2']."</td>";
+                                    echo "<td>".$peserta['anggota3']."</td>";
+                                    echo "<td>".$peserta['anggota4']."</td>";
+                                    echo "<td>".$peserta['telp']."</td>";
+                                    echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
+                                    echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
+                                    echo "</tr>";
+                                    $no++;
+                                }
+                                ?>
+                            </tbody>
+                        </table>
                     </div>
+                </div>
+                <div class="d-flex justify-content-between my-2">
+                    <a href="cetak.php" class="btn btn-primary fw-bold">Cetak</a>
+                    <a href="form-lomba-ml.php" class="btn btn-primary fw-bold">Tambah data</a>
                 </div>
             </div>
             <!-- tabel  end-->
