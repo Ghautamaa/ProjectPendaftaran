@@ -105,7 +105,7 @@ include '../../../backend/connection.php'
                                 echo "<td>".$peserta['anggota4']."</td>";
                                 echo "<td>".$peserta['telp']."</td>";
                                
-                                echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
+                                echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> | ";
                                 echo "    <a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
                                 echo "</tr>";
                                 $no++;
@@ -115,8 +115,11 @@ include '../../../backend/connection.php'
                             
                         </tbody>
                     </table>
-                    <div class="d-flex justify-content-end">
-                            <a href="form-lomba-valorant.php">
+                    <div class="d-flex justify-content-between">
+                            <a href="cetak.php">
+                                <button class="btn btn-primary fw-bold mb-3">Cetak</button>
+                            </a>
+                            <a href="form-lomba-valorant.php" >
                                 <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
                             </a>
                     </div>
