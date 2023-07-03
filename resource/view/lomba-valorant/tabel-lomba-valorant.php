@@ -1,3 +1,4 @@
+
 <?php 
 include '../../../backend/connection.php'
 ?>
@@ -72,7 +73,7 @@ include '../../../backend/connection.php'
                                     <th>Nama Anggota 2</th>
                                     <th>Nama Anggota 3</th>
                                     <th>Nama Anggota 4</th>
-                                    <th>No HP</th>
+                                    <th>Email</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -81,8 +82,8 @@ include '../../../backend/connection.php'
                                 <?php
                                 
                                 $sql = "SELECT *
-                                        FROM tb_peserta 
-                                        WHERE kategori_id = 1";
+                                        FROM tb_valorant
+                                        ";
                                 $query = mysqli_query($db, $sql);
                                 $no = 1;
                                 while ($peserta = mysqli_fetch_array($query)) {
@@ -94,7 +95,7 @@ include '../../../backend/connection.php'
                                     echo "<td>".$peserta['anggota2']."</td>";
                                     echo "<td>".$peserta['anggota3']."</td>";
                                     echo "<td>".$peserta['anggota4']."</td>";
-                                    echo "<td>".$peserta['telp']."</td>";
+                                    echo "<td>".$peserta['email']."</td>";
                                 
                                     echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> | ";
                                     echo "    <a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";

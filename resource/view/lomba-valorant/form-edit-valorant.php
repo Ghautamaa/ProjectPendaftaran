@@ -1,13 +1,9 @@
 <?php
 include '../../../backend/connection.php';
 
-// if (!isset($_GET['id']) || $_GET['id'] == null) {
-//     header("Location: tabel-lomba-valorant.php");
-// }
-
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM tb_peserta WHERE id = $id";
+$sql = "SELECT * FROM tb_valorant WHERE id = $id";
 $query = mysqli_query($db, $sql);
 $peserta = mysqli_fetch_array($query);
 ?>
@@ -26,7 +22,13 @@ $peserta = mysqli_fetch_array($query);
 <style>
     body{
         background-image: url('../../img/val_bg4.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
+    body, html {
+            height: 100%;
+        }
 </style>
 
   <body style="background-color: #E6F6F5; font-family: 'Montserrat', sans-serif; " >">
@@ -93,8 +95,8 @@ $peserta = mysqli_fetch_array($query);
                         <input type="text" value="<?php echo $peserta['anggota4'] ?>" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4" name="anggota4">
                     </div>   
                     <div class="mt-4">
-                        <label for="noHP" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
-                        <input type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA" name="telp">
+                        <label for="noHP" class="form-label ms-3 fw-bold">Email</label>
+                        <input type="text" value="<?php echo $peserta['email'] ?>" class="form-control rounded-pill" id="email" placeholder="abcd@gmail.com" name="email">
                     </div>   
                     <div class="d-flex justify-content-between">
                         <a href="tabel-lomba-valorant.php" class="btn text-white fw-bold my-5 px-5">Kembali</button></a>
