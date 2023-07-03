@@ -6,7 +6,7 @@
   if(($_SESSION['admin-page']!="logged")&&($_SESSION['peserta-page']!="logged") ){
     header('location:../login/login.php');
   }
-?> --> 
+?> -->
 
 <!doctype html>
 <html lang="en">
@@ -15,16 +15,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <style>
 
       /* Buat table */
       .bg-image {
-        background-image: url(../../img/ml.png);
+        background-image: url(../../img/background_jadwal2.webp);
         background-size: cover;
         background-position: center;
       }
@@ -41,10 +39,10 @@
     </style>
     <title>Home PNB EC</title>
   </head>    
-  <body style =" font-family: 'Montserrat', sans-serif;">      
+  <body>      
     <!-- Kondisi Nav -->
     <?php
-      if($_SESSION['peserta-page'] == 'logged') {
+      if ($_SESSION['peserta-page'] == 'logged') {
         include "../homepage/peserta_page.php";
       } else {
         include "../homepage/admin_page.php";
@@ -202,23 +200,27 @@
       <div class="row justify-content-center">
         <div class="col-md-12 mt-5">
           <div class="bg-image rounded-4 p-3">
+            <div style="text-align: center; color: white;">
+              <h5>#jadwal</h5>
+              <h1>Jadwal Lomba PNB EC</h1>
+             </div>
             <div class="text-white" id="tb">
             <table class="table1 text-black d-flex justify-content-between px-4" >
                 <tr>
                 <th scope="row">1</th>
-                <td class="">Mark</td>
+                <td class="">Valorant</td>
                 <td class="non-transparent">Otto</td>
                 <td class="non-transparent">@mdo</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td class="non-transparent">Jacob</td>
+                <td class="non-transparent">MLBB</td>
                 <td class="non-transparent">Thornton</td>
                 <td class="non-transparent">@fat</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td class="non-transparent">Larry the Bird</td>
+                <td class="non-transparent">PUBG-M</td>
                 <td class="non-transparent">@twitter</td>
                 <td class="non-transparent">@twitter</td>
               </tr>
