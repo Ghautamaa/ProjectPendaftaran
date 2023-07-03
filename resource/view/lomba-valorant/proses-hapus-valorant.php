@@ -8,7 +8,7 @@ include '../../../backend/connection.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM tb_peserta WHERE id = $id";
+$sql = "DELETE FROM tb_valorant WHERE id = $id";
 $query = mysqli_query($db, $sql);
 
 if ($query) {

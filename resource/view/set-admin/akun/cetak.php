@@ -14,9 +14,9 @@ $pdf->Cell(280,10,'DATA AKUN',0,0,'C');
 $pdf->Cell(10,15,'',0,1);
 $pdf->SetFont('Times','B',11);
 $pdf->Cell(10,7,'No',1,0,'C');
-$pdf->Cell(115,7,'nama' ,1,0,'C');
-$pdf->Cell(115,7,'email',1,0,'C');
-$pdf->Cell(40,7,'level',1,0,'C');
+$pdf->Cell(115,7,'Username' ,1,0,'C');
+$pdf->Cell(115,7,'Email',1,0,'C');
+$pdf->Cell(40,7,'Level',1,0,'C');
 
  
 $pdf->Cell(10,7,'',0,1);

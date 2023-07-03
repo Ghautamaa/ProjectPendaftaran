@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../../../../backend/connection.php';
 
 if (isset($_POST['submit'])) {
@@ -10,6 +11,7 @@ if (isset($_POST['submit'])) {
     $anggota4 = $_POST['anggota4'];
     $notelp = $_POST['telp'];
     $kategori = $_POST['kategori_id']; 
+    $user_id = $_POST['user_id'];
 
     $cek = "SELECT * from tb_peserta where tim = '$tim'";
     $result = mysqli_query($db, $cek);
@@ -18,8 +20,8 @@ if (isset($_POST['submit'])) {
         $error1 [] = 'nama team sudah digunakan';
     }
     else {
-            $sql = "INSERT INTO tb_peserta
-                    VALUES (' ','$tim', '$ketua', '$anggota1','$anggota2','$anggota3','$anggota4', '$notelp', '$kategori')";
+            $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, anggota4, telp, kategori_id, user_id)
+                    VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$notelp', '$kategori', '$user_id')";
             $query = mysqli_query($db, $sql); 
             header("Location: tabel-edit-peserta.php");
             
@@ -99,7 +101,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="mb-1 pt-3">
                           <label for="telp" class="form-label ms-3">Nomor Telp/WA</label>
-                          <input type="text" class="form-control rounded-4" id="telp" placeholder="explm. 08123456789 " name="telp">
+                          <input type="number" class="form-control rounded-4" id="telp" placeholder="explm. 08123456789 " name="telp">
                     </div>
                     <div class="mb-1 pt-3">
                         <label for="kategori" class="form-label ms-3 fw-bold">Kategori Lomba</label>
@@ -109,6 +111,7 @@ if (isset($_POST['submit'])) {
                             <option value="3">MLBB</option>
                         </select>
                     </div> 
+                    <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?>">
                     <div class="d-flex justify-content-between ms-1 my-4 pt-4">
                         <a style="text-decoration: underline; color: #ffff; font-size: 14px;" class="color mt-3" href="tabel-edit-peserta.php">Kembali</a>
                         <button type="submit" name="submit" class="btn btn-lg btn-secondary  rounded-4" class="background-color: #44908F;">Daftar</button> 

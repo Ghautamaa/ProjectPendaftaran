@@ -1,11 +1,3 @@
-<!-- Baru front end aja ni -->
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
-<!-- blum ad database, blum di test -->
 
 <?php 
 include '../../../backend/connection.php'
@@ -30,8 +22,7 @@ include '../../../backend/connection.php'
             background-color: #E6F6F5;
         }
         body {
-        background-image: url('../../img/val_bg4.png');
-        background-size: cover;
+            background-image: url('../../img/val_bg4.png');
         }
         
     </style>
@@ -71,58 +62,60 @@ include '../../../backend/connection.php'
                     <h2 style="color: #FFF4F4;">DAFTAR PESERTA LOMBA VALORANT</h2>
                 </div>
                 <div class="col-md-12 rounded-5 mb-2 text-center">
-                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Tim</th>
-                                <th>Nama Ketua</th>
-                                <th>Nama Anggota 1</th>
-                                <th>Nama Anggota 2</th>
-                                <th>Nama Anggota 3</th>
-                                <th>Nama Anggota 4</th>
-                                <th>No HP</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <!-- placeholder -->
-                        <tbody>
-                            <?php
-                            
-                            $sql = "SELECT *
-                                    FROM tb_peserta 
-                                    WHERE kategori_id = 1";
-                            $query = mysqli_query($db, $sql);
-                            $no = 1;
-                            while ($peserta = mysqli_fetch_array($query)) {
-                                echo "<tr>";
-                                echo "<td>".$no."</td>";
-                                echo "<td>".$peserta['tim']."</td>";
-                                echo "<td>".$peserta['ketua']."</td>";
-                                echo "<td>".$peserta['anggota1']."</td>";
-                                echo "<td>".$peserta['anggota2']."</td>";
-                                echo "<td>".$peserta['anggota3']."</td>";
-                                echo "<td>".$peserta['anggota4']."</td>";
-                                echo "<td>".$peserta['telp']."</td>";
-                               
-                                echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> | ";
-                                echo "    <a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
-                                echo "</tr>";
-                                $no++;
-                            }
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden;">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Tim</th>
+                                    <th>Nama Ketua</th>
+                                    <th>Nama Anggota 1</th>
+                                    <th>Nama Anggota 2</th>
+                                    <th>Nama Anggota 3</th>
+                                    <th>Nama Anggota 4</th>
+                                    <th>Email</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <!-- placeholder -->
+                            <tbody>
+                                <?php
+                                
+                                $sql = "SELECT *
+                                        FROM tb_valorant
+                                        ";
+                                $query = mysqli_query($db, $sql);
+                                $no = 1;
+                                while ($peserta = mysqli_fetch_array($query)) {
+                                    echo "<tr>";
+                                    echo "<td>".$no."</td>";
+                                    echo "<td>".$peserta['tim']."</td>";
+                                    echo "<td>".$peserta['ketua']."</td>";
+                                    echo "<td>".$peserta['anggota1']."</td>";
+                                    echo "<td>".$peserta['anggota2']."</td>";
+                                    echo "<td>".$peserta['anggota3']."</td>";
+                                    echo "<td>".$peserta['anggota4']."</td>";
+                                    echo "<td>".$peserta['email']."</td>";
+                                
+                                    echo "<td><a href='form-edit-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> | ";
+                                    echo "    <a href='proses-hapus-valorant.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
+                                    echo "</tr>";
+                                    $no++;
+                                }
 
-                            ?>
-                            
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-between">
-                            <a href="cetak.php">
-                                <button class="btn btn-primary fw-bold mb-3">Cetak</button>
-                            </a>
-                            <a href="form-lomba-valorant.php" >
-                                <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
-                            </a>
+                                ?>
+                                
+                            </tbody>
+                        </table>
                     </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                        <a href="cetak.php">
+                            <button class="btn btn-primary fw-bold mb-3">Cetak</button>
+                        </a>
+                        <a href="form-lomba-valorant.php" >
+                            <button class="btn btn-primary fw-bold mb-3">Tambah data</button>
+                        </a>
                 </div>
             </div>
         </div>
