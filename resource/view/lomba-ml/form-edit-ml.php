@@ -4,13 +4,15 @@
 session_start();
 include '../../../backend/connection.php';
 
-if (!isset($_GET['id']) || $_GET['id'] == null) {
+if (!isset($_GET['id'])) {
     header("Location: tabel-lomba-ml.php");
 }
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM tb_peserta WHERE id = $id";
+$sql = "SELECT * 
+        FROM tb_mlbb 
+        WHERE id = $id";
 $query = mysqli_query($db, $sql);
 $peserta = mysqli_fetch_array($query);
 ?>
@@ -104,6 +106,10 @@ $peserta = mysqli_fetch_array($query);
                     <div class="mt-4">
                         <label for="anggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
                         <input name="anggota4" type="text" value="<?php echo $peserta['anggota4'] ?>" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
+                    </div>   
+                    <div class="mt-4">
+                        <label for="cadangan" class="form-label ms-3 fw-bold">Nama Cadangan</label>
+                        <input name="cadangan" type="text" value="<?php echo $peserta['cadangan'] ?>" class="form-control rounded-pill" id="cadangan" placeholder="Nama Cadangan">
                     </div>   
                     <div class="mt-4">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
