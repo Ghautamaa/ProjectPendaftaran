@@ -33,35 +33,42 @@
 
   <!-- PHP untuk menampilkan status -->
   <?php
+    if($_SESSION['peserta-page'] == 'logged') {
+        include "../homepage/peserta_page.php";
+    } else {
+        include "../homepage/admin_page.php";
+    }
+
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
-
-        echo "<div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
         if ($status == "Sukses") {
-            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
         } else if ($status == "Gagal") {
-            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
         }
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div>";
     }
     ?>
+
         
     <!-- Tabel lomba ml  -->
     <section id="tabel">
         <div class="container">
-            <!-- header tabel -->
-            <div class="row justify-content-center">
-                <div class="col-sm-12 text-center text-white py-3">
+        <!-- alert -->
+        <div class="row justify-content-center">
+            <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
+                <?php echo $alert; ?>
+            </div>
+        </div>
+        <!-- alert end -->
+        <!-- header form-->
+        <div class="row justify-content-center">
+            <div class="col-md-4 p-2 text-center text-white fw-bolder">
                     <h2>DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             </div>

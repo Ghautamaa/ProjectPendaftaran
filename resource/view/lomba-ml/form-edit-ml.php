@@ -45,35 +45,41 @@ $peserta = mysqli_fetch_array($query);
   <body style="background-color: #E6F6F5;">
     <!-- PHP untuk menampilkan status pendaftaran -->
     <?php
+    if($_SESSION['peserta-page'] == 'logged') {
+        include "../homepage/peserta_page.php";
+    } else {
+        include "../homepage/admin_page.php";
+    }
+
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
-
-        echo "<div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
         if ($status == "Sukses") {
-            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
         } else if ($status == "Gagal") {
-            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
                             <strong>$status</strong>
                             <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                         </div>";
         }
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div>";
     }
     ?>
     
   <!-- Form edit  -->
   <section id="form">
     <div class="container">
+        <!-- alert -->
+        <div class="row justify-content-center">
+            <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
+                <?php echo $alert; ?>
+            </div>
+        </div>
+        <!-- alert end -->
         <!-- header form-->
         <div class="row justify-content-center">
-            <div class="col-md-4 p-2 m-2 text-center text-white fw-bolder">
+            <div class="col-md-4 p-2 text-center text-white fw-bolder">
                 <h2>EDIT PENDAFTARAN LOMBA MLBB</h2>
             </div>
         </div>
