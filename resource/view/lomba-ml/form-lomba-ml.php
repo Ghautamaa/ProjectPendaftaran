@@ -1,8 +1,8 @@
 <!-- Nav , footer, ikon blum -->
 <?php
     session_start();
-    if (!isset($_SESSION)) {
-        header("Location: login.php");
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: ../login/login.php");
     }
 ?>
 <!doctype html>
@@ -94,12 +94,12 @@
                         <input required type="text" name="anggota3" class="form-control rounded-pill" id="anggota3" placeholder="Nama Anggota 3">
                     </div>
                     <div class="mt-4">
-                        <label for="cadangan" class="form-label ms-3 fw-bold">Nama Cadangan</label>
-                        <input required type="text" name="cadangan" class="form-control rounded-pill" id="cadangan" placeholder="Nama Cadangan">
-                    </div>   
-                    <div class="mt-4">
                         <label for="anggota4" class="form-label ms-3 fw-bold">Nama Anggota 4</label>
                         <input required type="text" name="anggota4" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
+                    </div>   
+                    <div class="mt-4">
+                        <label for="cadangan" class="form-label ms-3 fw-bold">Nama Cadangan</label>
+                        <input required type="text" name="cadangan" class="form-control rounded-pill" id="cadangan" placeholder="Nama Cadangan">
                     </div>   
                     <div class="mt-4">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
