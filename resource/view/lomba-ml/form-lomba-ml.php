@@ -30,7 +30,7 @@
     </style>
   </head>
 
-  <body >
+  <body>
     <?php
     if($_SESSION['peserta-page'] == 'logged') {
         include "../homepage/peserta_page.php";
