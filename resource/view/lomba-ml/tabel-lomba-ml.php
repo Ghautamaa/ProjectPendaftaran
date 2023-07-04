@@ -1,6 +1,4 @@
 <!-- Nav , footer, ikon blum -->
-
-
 <?php 
     session_start();
     include '../../../backend/connection.php';
@@ -76,12 +74,13 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Nama Tim</th>
-                                    <th>Nama Ketua</th>
-                                    <th>Nama Anggota 1</th>
-                                    <th>Nama Anggota 2</th>
-                                    <th>Nama Anggota 3</th>
-                                    <th>Nama Anggota 4</th>
+                                    <th>Tim</th>
+                                    <th>Ketua</th>
+                                    <th>Anggota 1</th>
+                                    <th>Anggota 2</th>
+                                    <th>Anggota 3</th>
+                                    <th>Anggota 4</th>
+                                    <th>Cadangan</th>
                                     <th>No HP</th>
                                     <th>Aksi</th>
                                 </tr>
@@ -89,8 +88,7 @@
                             <tbody>
                                 <?php
                                 $sql = "SELECT *
-                                        FROM tb_peserta 
-                                        WHERE kategori_id = 3";
+                                        FROM tb_mlbb";
                                 $query = mysqli_query($db, $sql);
                                 $no = 1;
                                 while ($peserta = mysqli_fetch_assoc($query)) {
@@ -102,6 +100,7 @@
                                     echo "<td>".$peserta['anggota2']."</td>";
                                     echo "<td>".$peserta['anggota3']."</td>";
                                     echo "<td>".$peserta['anggota4']."</td>";
+                                    echo "<td>".$peserta['cadangan']."</td>";
                                     echo "<td>".$peserta['telp']."</td>";
                                     echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
                                     echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
