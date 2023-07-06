@@ -1,7 +1,7 @@
 <?php
 include '../../../backend/connection.php';
+
 if (isset($_POST['submit'])) {
-    $user_id = $_POST['user_id'];
     $tim = htmlspecialchars($_POST['tim']);
     $ketua = htmlspecialchars($_POST['ketua']);
     $anggota1 = htmlspecialchars($_POST['anggota1']);
@@ -12,8 +12,8 @@ if (isset($_POST['submit'])) {
     $telp = htmlspecialchars($_POST['telp']);
 
 
-    $sql = "INSERT INTO tb_mlbb (tim, ketua, anggota1, anggota2, anggota3, anggota4, cadangan, telp, user_id)
-            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$cadangan', '$telp', '$user_id')";
+    $sql = "INSERT INTO tb_mlbb (tim, ketua, anggota1, anggota2, anggota3, anggota4, cadangan, telp)
+            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$anggota4', '$cadangan', '$telp')";
     $query = mysqli_query($db, $sql);
     if ($query) {
         header("Location: form-lomba-ml.php?status=Sukses");

@@ -1,21 +1,38 @@
 <!-- Nav , footer, ikon blum -->
 
 <?php
-session_start();
-include '../../../backend/connection.php';
+    include '../../../backend/connection.php';
 
-if (!isset($_GET['id'])) {
-    header("Location: tabel-lomba-ml.php");
-}
+    // set status
+    $alert = "";
+    if (isset ($_GET['status'])) {
+        $status = $_GET['status'];
+        if ($status == "Sukses") {
+            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        } else if ($status == "Gagal") {
+            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        }
+    }
 
-$id = $_GET['id'];
+    $id = $_GET['id'];
 
-$sql = "SELECT * 
-        FROM tb_mlbb 
-        WHERE id = $id";
-$query = mysqli_query($db, $sql);
-$peserta = mysqli_fetch_array($query);
+    $sql = "SELECT * 
+            FROM tb_mlbb 
+            WHERE id = $id";
+    $query = mysqli_query($db, $sql);
+    $peserta = mysqli_fetch_array($query);
 ?>
+
+<!--set status -->
+    <?php
+    
+    ?>
 
 <!doctype html>
 <html lang="en">
@@ -43,25 +60,8 @@ $peserta = mysqli_fetch_array($query);
   </head>
 
   <body>
-    <!-- status -->
-    <?php
-    $alert = "";
-    if (isset ($_GET['status'])) {
-        $status = $_GET['status'];
-        if ($status == "Sukses") {
-            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        } else if ($status == "Gagal") {
-            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        }
-    }
-    ?>
-    <!-- status end -->
+    
+
     
   <!-- Form edit  -->
   <section id="form">
