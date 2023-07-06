@@ -34,15 +34,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- CSS -->
     <style>
-    body {
-        background-image: url('../../img/ml_bg.jpg');
-        background-size: cover;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .bg-form{
-        background-color: #212a40;
-        opacity: 0.8;
-    }
+        body {
+            background-image: url('../../img/ml_bg.jpg');
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bg-form{
+            background-color: #212a40;
+            opacity: 0.8;
+        }
     </style>
   </head>
 
