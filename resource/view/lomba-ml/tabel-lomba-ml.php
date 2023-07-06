@@ -33,12 +33,6 @@
 
   <!-- PHP untuk menampilkan status -->
   <?php
-    if($_SESSION['peserta-page'] == 'logged') {
-        include "../homepage/peserta_page.php";
-    } else {
-        include "../homepage/admin_page.php";
-    }
-
     $alert = "";
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
@@ -60,16 +54,16 @@
     <!-- Tabel lomba ml  -->
     <section id="tabel">
         <div class="container">
-        <!-- alert -->
-        <div class="row justify-content-center">
-            <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
-                <?php echo $alert; ?>
+            <!-- alert -->
+            <div class="row justify-content-center">
+                <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
+                    <?php echo $alert; ?>
+                </div>
             </div>
-        </div>
-        <!-- alert end -->
-        <!-- header form-->
-        <div class="row justify-content-center">
-            <div class="col-md-4 p-2 text-center text-white fw-bolder">
+            <!-- alert end -->
+            <!-- header form-->
+            <div class="row justify-content-center">
+                <div class="col-md-4 p-2 text-center text-white fw-bolder">
                     <h2>DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             </div>
@@ -120,15 +114,16 @@
                         </table>
                     </div>
                 </div>
+                <!-- tabel  end-->
                 <div class="d-flex justify-content-between my-2">
                     <a href="cetak.php" class="btn btn-primary fw-bold">Cetak</a>
                     <a href="form-lomba-ml.php" class="btn btn-primary fw-bold">Tambah data</a>
                 </div>
             </div>
-            <!-- tabel  end-->
         </div>
     </section>
     <!-- Tabel lomba ml end -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

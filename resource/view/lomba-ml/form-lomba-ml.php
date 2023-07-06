@@ -31,13 +31,9 @@
   </head>
 
   <body>
-    <?php
-    if($_SESSION['peserta-page'] == 'logged') {
-        include "../homepage/peserta_page.php";
-    } else {
-        include "../homepage/admin_page.php";
-    }
 
+    <!-- status -->
+    <?php
     $alert = "";
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
@@ -54,6 +50,7 @@
         }
     }
     ?>
+    <!-- status end -->
 
   <!-- Form daftar  -->
   <section id="form">

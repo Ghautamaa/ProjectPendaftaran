@@ -42,15 +42,9 @@ $peserta = mysqli_fetch_array($query);
     </style>
   </head>
 
-  <body style="background-color: #E6F6F5;">
-    <!-- PHP untuk menampilkan status pendaftaran -->
+  <body>
+    <!-- status -->
     <?php
-    if($_SESSION['peserta-page'] == 'logged') {
-        include "../homepage/peserta_page.php";
-    } else {
-        include "../homepage/admin_page.php";
-    }
-
     $alert = "";
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
@@ -67,6 +61,7 @@ $peserta = mysqli_fetch_array($query);
         }
     }
     ?>
+    <!-- status end -->
     
   <!-- Form edit  -->
   <section id="form">
@@ -123,7 +118,7 @@ $peserta = mysqli_fetch_array($query);
                         <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-between">
-                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Kembali</button></a>
+                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Kembali</a>
                         <button name="submit" type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>
