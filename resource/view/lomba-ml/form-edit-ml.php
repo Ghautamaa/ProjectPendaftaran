@@ -51,6 +51,7 @@ $peserta = mysqli_fetch_array($query);
         include "../homepage/admin_page.php";
     }
 
+    $alert = "";
     if (isset ($_GET['status'])) {
         $status = $_GET['status'];
         if ($status == "Sukses") {
