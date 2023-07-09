@@ -1,15 +1,7 @@
-<!-- Baru front end aja ni -->
-<!-- Font style sama icon blum di add -->
-<!-- Nav sama footer juga -->
-
-<!-- rapiin klo niat  -->
-<!-- malas css -->
-
-<!-- blum ad database, blum di test -->
 
 <?php 
 include '../../../../backend/connection.php';
-session_start();
+// session_start();
 ?>
 
 <!doctype html>
@@ -17,7 +9,7 @@ session_start();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daftar Peserta Lomba Valorant</title>
+    <title>DATA AKUN</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,9 +43,9 @@ session_start();
               Admin<!-- <img src="../../../img/head.png" width="30" height="30" class="align-items-stretch" style="color: White;" alt=""> -->
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="tabel-edit-akun.php">Daftar Akun</a></li>
+            <li><a class="dropdown-item" href="tabel-edit-akun.php">Data Akun</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../peserta/tabel-edit-peserta.php">Daftar Peserta Lomba</a></li>
+            <li><a class="dropdown-item" href="../peserta/tabel-edit-peserta.php">Data Peserta Lomba</a></li>
           </ul>
       </li>
       <li class="nav-item d-flex align-items-center justify-content-center">
@@ -77,6 +69,7 @@ session_start();
                     <h2 style="color: #FFF4F4; opacity: 0.9;">DAFTAR AKUN</h2>
                 </div>
                 <div class="col-md-12 rounded-5 mb-2">
+                    <div class="table-responsive">
                     <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
                         <thead >
                             <tr>
@@ -113,6 +106,7 @@ session_start();
                             
                         </tbody>
                     </table>
+                    </div>
                     <div class="d-flex justify-content-between">
                             <div>
                                 <a href="cetak.php">
@@ -129,7 +123,7 @@ session_start();
             </div>
         </div>
     </section>
-    <!-- Tabel akun end -->
+    <!-- Tabel akun  end -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

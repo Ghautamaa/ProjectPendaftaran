@@ -14,12 +14,10 @@ if(isset($_POST['submit'])) {
         $_SESSION['user_id'] = $take['id'];
             if ($level == 'admin') {
                 $_SESSION['admin-page'] = 'logged';
-                $_SESSION['role'] = 'admin';
                 header('Location: ../layout/home.php');
                 exit();
             } elseif($level == 'peserta') {
                 $_SESSION['peserta-page'] = 'logged';
-                $_SESSION['role'] = 'peserta';
                 header('Location: ../layout/home.php');
                 exit();
             }

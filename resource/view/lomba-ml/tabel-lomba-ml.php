@@ -1,13 +1,29 @@
 <!-- Nav , footer, ikon blum -->
 
-
-<?php 
+<?php
     include '../../../backend/connection.php';
+    
+    // set status
+    $alert = "";
+    if (isset ($_GET['status'])) {
+        $status = $_GET['status'];
+        if ($status == "Sukses") {
+            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        } else if ($status == "Gagal") {
+            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        }
+    }
 ?>
 
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar Peserta Lomba MLBB</title>
@@ -24,44 +40,26 @@
         }
         body {
             background-image: url('../../img/ml_bg.jpg');
+            background-size: cover;
             font-family: 'Montserrat', sans-serif;
         }
     </style>
-  </head>
+</head>
 
-  <body>
-
-  <!-- PHP untuk menampilkan status -->
-  <?php
-    if (isset ($_GET['status'])) {
-        $status = $_GET['status'];
-
-        echo "<div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "Sukses") {
-            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        } else if ($status == "Gagal") {
-            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        }
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div>";
-    }
-    ?>
-        
+<body>        
     <!-- Tabel lomba ml  -->
     <section id="tabel">
         <div class="container">
-            <!-- header tabel -->
+            <!-- alert -->
             <div class="row justify-content-center">
-                <div class="col-sm-12 text-center text-white py-3">
+                <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
+                    <?php echo $alert; ?>
+                </div>
+            </div>
+            <!-- alert end -->
+            <!-- header form-->
+            <div class="row justify-content-center">
+                <div class="col-md-4 p-2 text-center text-white fw-bolder">
                     <h2>DAFTAR PESERTA LOMBA MLBB</h2>
                 </div>
             </div>
@@ -69,55 +67,59 @@
             <!-- tabel -->
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Tim</th>
-                                <th>Nama Ketua</th>
-                                <th>Nama Anggota 1</th>
-                                <th>Nama Anggota 2</th>
-                                <th>Nama Anggota 3</th>
-                                <th>Nama Anggota 4</th>
-                                <th>No HP</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </thead>
-                        <tbody>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" style="border-radius: 10px; overflow: hidden; opacity: 0.8;">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Tim</th>
+                                    <th>Ketua</th>
+                                    <th>Anggota 1</th>
+                                    <th>Anggota 2</th>
+                                    <th>Anggota 3</th>
+                                    <th>Anggota 4</th>
+                                    <th>Cadangan</th>
+                                    <th>No HP</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
                             <?php
-                            $sql = "SELECT *
-                                    FROM tb_peserta 
-                                    WHERE kategori_id = 3";
-                            $query = mysqli_query($db, $sql);
-                            $no = 1;
-                            while ($peserta = mysqli_fetch_assoc($query)) {
-                                echo "<tr>";
-                                echo "<td class='fw-bold'>".$no."</td>";
-                                echo "<td>".$peserta['tim']."</td>";
-                                echo "<td>".$peserta['ketua']."</td>";
-                                echo "<td>".$peserta['anggota1']."</td>";
-                                echo "<td>".$peserta['anggota2']."</td>";
-                                echo "<td>".$peserta['anggota3']."</td>";
-                                echo "<td>".$peserta['anggota4']."</td>";
-                                echo "<td>".$peserta['telp']."</td>";
-                                echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
-                                echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
-                                echo "</tr>";
-                                $no++;
-                            }
+                                $sql = "SELECT *
+                                        FROM tb_mlbb";
+                                $query = mysqli_query($db, $sql);
+                                $no = 1;
+                                while ($peserta = mysqli_fetch_assoc($query)) {
+                                    echo "<tr>";
+                                    echo "<td class='fw-bold'>".$no."</td>";
+                                    echo "<td>".$peserta['tim']."</td>";
+                                    echo "<td>".$peserta['ketua']."</td>";
+                                    echo "<td>".$peserta['anggota1']."</td>";
+                                    echo "<td>".$peserta['anggota2']."</td>";
+                                    echo "<td>".$peserta['anggota3']."</td>";
+                                    echo "<td>".$peserta['anggota4']."</td>";
+                                    echo "<td>".$peserta['cadangan']."</td>";
+                                    echo "<td>".$peserta['telp']."</td>";
+                                    echo "<td><a href='form-edit-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-warning text-white fw-bold'>Edit</button></a> |";
+                                    echo "    <a href='proses-hapus-ml.php?id=".$peserta['id']."'><button class='btn btn-sm btn-danger text-white fw-bold' onclick=\"return confirm('Yakin?')\">Hapus</button></a></td>";
+                                    echo "</tr>";
+                                    $no++;
+                                }
                             ?>
-                        </tbody>
-                    </table>
-                    <div class="d-flex justify-content-between">
-                        <a href="cetak.php" class="btn btn-primary fw-bold mb-3">Cetak</a>
-                        <a href="form-lomba-ml.php" class="btn btn-primary fw-bold mb-3">Tambah data</a>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+                <!-- tabel  end-->
+                <div class="d-flex justify-content-between my-2">
+                    <a href="cetak.php" class="btn btn-primary fw-bold">Cetak</a>
+                    <a href="form-lomba-ml.php" class="btn btn-primary fw-bold">Tambah data</a>
+                </div>
             </div>
-            <!-- tabel  end-->
         </div>
     </section>
     <!-- Tabel lomba ml end -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

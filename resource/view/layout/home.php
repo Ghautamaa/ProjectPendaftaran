@@ -101,8 +101,9 @@
     </div>
     <!-- End Kolom/Grid welcome -->
 
+
     <!-- Start Card Daftar Lomba-->
-    <div class="container-fluid pt-3">
+    <div class="container-fluid pt-3" id="pendaftaran">
       <div class="col-md-12 text-center pt-5">
         <h5 >#E-SPORT</h5>
         <h1>

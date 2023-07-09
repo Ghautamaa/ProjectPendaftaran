@@ -1,18 +1,38 @@
 <!-- Nav , footer, ikon blum -->
 
 <?php
-include '../../../backend/connection.php';
+    include '../../../backend/connection.php';
 
-if (!isset($_GET['id']) || $_GET['id'] == null) {
-    header("Location: tabel-lomba-ml.php");
-}
+    // set status
+    $alert = "";
+    if (isset ($_GET['status'])) {
+        $status = $_GET['status'];
+        if ($status == "Sukses") {
+            $alert = "  <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        } else if ($status == "Gagal") {
+            $alert = "  <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
+                            <strong>$status</strong>
+                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                        </div>";
+        }
+    }
 
-$id = $_GET['id'];
+    $id = $_GET['id'];
 
-$sql = "SELECT * FROM tb_peserta WHERE id = $id";
-$query = mysqli_query($db, $sql);
-$peserta = mysqli_fetch_array($query);
+    $sql = "SELECT * 
+            FROM tb_mlbb 
+            WHERE id = $id";
+    $query = mysqli_query($db, $sql);
+    $peserta = mysqli_fetch_array($query);
 ?>
+
+<!--set status -->
+    <?php
+    
+    ?>
 
 <!doctype html>
 <html lang="en">
@@ -27,50 +47,35 @@ $peserta = mysqli_fetch_array($query);
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- CSS -->
     <style>
-    body {
-        background-image: url('../../img/ml_bg.jpg');
-        font-family: 'Montserrat', sans-serif;
-        background-size: cover;
-    }
-    .bg-form{
-        background-color: #212a40;
-        opacity : 0.8;
-    }
+        body {
+            background-image: url('../../img/ml_bg.jpg');
+            font-family: 'Montserrat', sans-serif;
+            background-size: cover;
+        }
+        .bg-form{
+            background-color: #212a40;
+            opacity : 0.8;
+        }
     </style>
   </head>
 
-  <body style="background-color: #E6F6F5;">
-    <!-- PHP untuk menampilkan status pendaftaran -->
-    <?php
-    if (isset ($_GET['status'])) {
-        $status = $_GET['status'];
+  <body>
+    
 
-        echo "<div class='container'>
-                <div class='row justify-content-center'>
-                    <div class='col-md-6 rounded-3 mb-2 text-white px-5'>";
-        if ($status == "Sukses") {
-            echo "      <div class='alert alert-success alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        } else if ($status == "Gagal") {
-            echo "      <div class='alert alert-danger alert-dismissible fade show mt-3' role='alert'>
-                            <strong>$status</strong>
-                            <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
-                        </div>";
-        }
-        echo "      </div>";
-        echo "  </div>";
-        echo "</div>";
-    }
-    ?>
     
   <!-- Form edit  -->
   <section id="form">
     <div class="container">
+        <!-- alert -->
+        <div class="row justify-content-center">
+            <div class="col-md-7 mt-5 pt-5 text-center fw-bolder">
+                <?php echo $alert; ?>
+            </div>
+        </div>
+        <!-- alert end -->
         <!-- header form-->
         <div class="row justify-content-center">
-            <div class="col-md-4 p-2 m-2 text-center text-white fw-bolder">
+            <div class="col-md-4 p-2 text-center text-white fw-bolder">
                 <h2>EDIT PENDAFTARAN LOMBA MLBB</h2>
             </div>
         </div>
@@ -105,11 +110,15 @@ $peserta = mysqli_fetch_array($query);
                         <input name="anggota4" type="text" value="<?php echo $peserta['anggota4'] ?>" class="form-control rounded-pill" id="anggota4" placeholder="Nama Anggota 4">
                     </div>   
                     <div class="mt-4">
+                        <label for="cadangan" class="form-label ms-3 fw-bold">Nama Cadangan</label>
+                        <input name="cadangan" type="text" value="<?php echo $peserta['cadangan'] ?>" class="form-control rounded-pill" id="cadangan" placeholder="Nama Cadangan">
+                    </div>   
+                    <div class="mt-4">
                         <label for="telp" class="form-label ms-3 fw-bold">No. Telepon/WA</label>
                         <input name="telp" type="text" value="<?php echo $peserta['telp'] ?>" class="form-control rounded-pill" id="telp" placeholder="No. Telepon/WA">
                     </div>   
                     <div class="d-flex justify-content-between">
-                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Kembali</button></a>
+                        <a href="tabel-lomba-ml.php" class="btn text-white fw-bold my-5 px-5">Kembali</a>
                         <button name="submit" type="submit" class="btn btn-lg btn-success my-5 px-5 rounded-4 shadow fw-bold">Edit</button> 
                     </div>
                 </form>

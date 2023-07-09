@@ -9,7 +9,7 @@
       <a class="navbar-brand text-white" href="#">Home</a>
     </li>
     <li class="nav-item d-flex align-items-center justify-content-center">
-      <a class="navbar-brand text-white" href="#">Pendaftaran</a>
+      <a class="navbar-brand text-white" href="#pendaftaran">Pendaftaran</a>
     </li>
     <li class="nav-item d-flex align-items-center justify-content-center">
       <a class="navbar-brand text-white" href="#">About</a>

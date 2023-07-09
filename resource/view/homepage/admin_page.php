@@ -11,9 +11,9 @@
             Admin<!-- <img src="../../img/head.png" width="30" height="30" class="align-items-stretch" style="color: White; padding: -0px; margin: 0; " alt=""> -->
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../set-admin/akun/form-edit-akun.php">Daftar Akun</a></li>
+            <li><a class="dropdown-item" href="../set-admin/akun/form-edit-akun.php">Data Akun</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="../set-admin/peserta/tabel-edit-peserta.php">Daftar Peserta Lomba</a></li>
+            <li><a class="dropdown-item" href="../set-admin/peserta/tabel-edit-peserta.php">Data Peserta Lomba</a></li>
           </ul>
       </li>
       <li class="nav-item d-flex align-items-center justify-content-center">
