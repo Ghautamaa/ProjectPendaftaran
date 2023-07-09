@@ -82,11 +82,8 @@
                         <tbody>
                             <?php
                             // buat Hanya Nampilin kategori pubg
-                            $sql = "SELECT tb_peserta.*
-                                    FROM tb_peserta 
-                                    INNER JOIN tb_kategorilomba 
-                                    ON tb_peserta.kategori_id = tb_kategorilomba.id
-                                    WHERE tb_kategorilomba.id = 2";
+                            $sql = "SELECT * FROM `tb_pubg`" 
+                                    ;
 
                             $query = mysqli_query($db, $sql);
                             $no = 1;

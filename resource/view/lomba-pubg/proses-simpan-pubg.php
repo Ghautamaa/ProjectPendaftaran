@@ -12,8 +12,8 @@ if (isset($_POST['submit'])) {
     $kategori_id = htmlspecialchars($_POST['kategori_id']);
     $user_id = htmlspecialchars($_POST['user_id']);
 
-    $sql = "INSERT INTO tb_peserta (tim, ketua, anggota1, anggota2, anggota3, telp, kategori_id, user_id)
-            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$telp', '$kategori_id', '$user_id')";
+    $sql = "INSERT INTO tb_pubg (tim, ketua, anggota1, anggota2, anggota3, telp, user_id)
+            VALUES ('$tim', '$ketua', '$anggota1', '$anggota2', '$anggota3', '$telp', '$user_id')";
     
     // Ngecek apakah berhasil ngirim apa kaga
     $query = mysqli_query($db, $sql);

@@ -25,11 +25,7 @@ $pdf->Cell(10,7,'',0,1);
 
 $pdf->SetFont('Times', '', 10);
 $no = 1;
-$data = mysqli_query($db, "	SELECT tb_peserta.*
-							FROM tb_peserta 
-							INNER JOIN tb_kategorilomba 
-							ON tb_peserta.kategori_id = tb_kategorilomba.id
-							WHERE tb_kategorilomba.id = 2");
+$data = mysqli_query($db, "	SELECT * FROM `tb_pubg`");
 
 while ($d = mysqli_fetch_array($data)) {
   $pdf->Cell(10, 6, $no++, 1, 0, 'C');
