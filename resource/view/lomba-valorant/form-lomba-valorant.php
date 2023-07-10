@@ -16,7 +16,9 @@ include '../../../backend/connection.php';
 <style>
     body{
         background-image: url('../../img/val_bg4.png');
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position: center center;
     }
 </style>
 
