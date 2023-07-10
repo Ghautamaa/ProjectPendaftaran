@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $anggota3 = htmlspecialchars($_POST['anggota3']);
     $telp = htmlspecialchars($_POST['telp']);
 
-    $sql = "UPDATE tb_peserta 
+    $sql = "UPDATE tb_pubg 
             SET tim ='$tim',
                 ketua = '$ketua',
                 anggota1 = '$anggota1',

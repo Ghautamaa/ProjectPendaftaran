@@ -7,7 +7,7 @@ if (!isset($_GET['id']) || $_GET['id'] == null) {
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM tb_peserta WHERE id = $id";
+$sql = "DELETE FROM tb_pubg WHERE id = $id";
 $query = mysqli_query($db, $sql);
 
 if ($query) {

@@ -7,7 +7,7 @@ if (!isset($_GET['id']) || $_GET['id'] == null) {
 
 $id = $_GET['id'];
 
-$sql = "SELECT * FROM tb_peserta WHERE id = $id";
+$sql = "SELECT * FROM tb_pubg WHERE id = $id";
 $query = mysqli_query($db, $sql);
 $peserta = mysqli_fetch_array($query);
 ?>
