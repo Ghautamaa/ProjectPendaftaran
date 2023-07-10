@@ -9,7 +9,6 @@ if (isset($_POST['submit'])) {
     $anggota2 = htmlspecialchars($_POST['anggota2']);
     $anggota3 = htmlspecialchars($_POST['anggota3']);
     $telp = htmlspecialchars($_POST['telp']);
-    $kategori_id = htmlspecialchars($_POST['kategori_id']);
     $user_id = htmlspecialchars($_POST['user_id']);
 
     $sql = "INSERT INTO tb_pubg (tim, ketua, anggota1, anggota2, anggota3, telp, user_id)

@@ -1,8 +1,6 @@
 <?php
 include '../../../backend/connection.php';
 
-// blum ad database, blum di test
-
 if (isset($_POST['submit'])) {
     $id = $_POST['id'];
     $tim = htmlspecialchars($_POST['tim']);

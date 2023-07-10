@@ -63,10 +63,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8 rounded-3 mb-2 text-white px-5" style="background-color: #0B132B; opacity: 0.8;">
                 <form action="proses-simpan-pubg.php" method="post">
-                    <!-- input id kategori & id user, edit klo gk perlu -->
                     <input type="hidden" name="kategori_id" value="2">
                     <input type="hidden" name="user_id" value="1">
-                    <!--  -->
                     <div class="mt-4 pt-3">
                         <label for="tim" class="form-label ms-3 fw-bold">Nama Tim</label>
                         <input required type="text" name="tim" class="form-control rounded-pill" id="tim" placeholder="Nama Tim">

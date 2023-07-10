@@ -81,7 +81,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            // buat Hanya Nampilin kategori pubg
+                            
                             $sql = "SELECT * FROM `tb_pubg`" 
                                     ;
 
